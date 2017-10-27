@@ -1,0 +1,733 @@
+@charset "utf-8";
+Validform_checktip {
+	margin-left: 8px;
+	line-height: 20px;
+	overflow: hidden;
+	color: #999;
+	font-size: 12px;
+}
+
+.Validform_right {
+	color: #71b83d;
+	position: absolute;
+	top: 47px;
+	left: 126px;
+	font-size: 12px;
+	display: inline-block;
+	float: left;
+	line-height: 36px;
+	margin-left: 0px;
+	height: 28px;
+	white-space: nowrap;
+}
+
+.Validform_wrong {
+	color: #d91864;
+	white-space: nowrap;
+}
+
+.address_wrong {
+	position: absolute;
+	top: 44px;
+	left: 126px;
+	font-size: 12px;
+	display: inline-block;
+	float: left;
+	line-height: 36px;
+	margin-left: 0px;
+	height: 28px;
+}
+
+.Validform_loading {
+	padding-left: 20px;
+}
+
+.Validform_error {
+	background-color: #ffe7e7;
+}
+
+#Validform_msg {
+	color: #7d8289;
+	font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+	width: 280px;
+	-webkit-box-shadow: 2px 2px 3px #aaa;
+	-moz-box-shadow: 2px 2px 3px #aaa;
+	background: #fff;
+	position: absolute;
+	top: 0px;
+	right: 50px;
+	z-index: 99999;
+	display: none;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+#Validform_msg .iframe {
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	z-index: -1;
+}
+
+#Validform_msg .Validform_title {
+	line-height: 25px;
+	height: 25px;
+	text-align: left;
+	font-weight: bold;
+	padding: 0 8px;
+	color: #fff;
+	position: relative;
+	background-color: #000;
+}
+
+#Validform_msg a.Validform_close:link,
+#Validform_msg a.Validform_close:visited {
+	line-height: 22px;
+	position: absolute;
+	right: 8px;
+	top: 0px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#Validform_msg a.Validform_close:hover {
+	color: #cc0;
+}
+
+#Validform_msg .Validform_info {
+	padding: 8px;
+	border: 1px solid #000;
+	border-top: none;
+	text-align: left;
+}
+.shoppingCart .user_address,
+.shoppingCart .cList_box .price span,
+.shoppingCart .cList_box .subtotal span,
+.shoppingCart .total_price li,
+.shoppingCart .cList_foot span,
+.shoppingCart .pay_method {
+	color: #333;
+}
+
+.total_price li .amount {
+	color: #f22867;
+}
+
+.shoppingCart {
+	margin: 20px 0 40px;
+}
+
+.schedule {
+	width: 900px;
+	height: 29px;
+	background: url(../img/shopping_steps.png) no-repeat;
+	margin-bottom: 20px;
+}
+
+.schedule li.selected {
+	color: #fff;
+}
+
+.schedule li {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #737d8c;
+	float: left;
+}
+
+.schedule01 {
+	background-position: 0px -90px;
+}
+
+.mycar_hd {
+	margin: 40px auto;
+	width: 900px;
+}
+
+.shoppingCart .user_address,
+.shoppingCart .pay_method {
+	border: solid 1px #f0f0f0;
+	background-color: #fff;
+	padding: 20px 50px;
+	font-size: 14px;
+	margin: 30px 0;
+}
+
+.shoppingCart .btn {
+	display: inline-block;
+	padding: 5px 20px 7px 20px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 3px;
+	background: #f22867;
+	margin: 30px 20px;
+	cursor: pointer;
+}
+
+.shoppingCart a.btn:hover {
+	color: #fff;
+}
+
+.add_add .link {
+	color: #333;
+	font-size: 14px;
+}
+
+.add_add .link:hover {
+	color: #f22867;
+}
+
+.user_address li.selected {
+	background: #f9f9f9;
+}
+
+.address_list li {
+	padding: 10px 0;
+}
+
+.user_address li .marker-tip{
+	visibility: hidden;
+}
+.user_address li.selected .marker-tip {
+	display: inline-block;
+	font-size: 16px;
+	color: #d91966;
+	visibility: visible;
+}
+
+input[type="radio"] {
+	padding: 0;
+	margin: 5px 5px 0;
+}
+
+.user_address li.selected label {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+}
+.user_address li:hover{
+	background: #f9f9f9;
+}
+.user_address li .address .tel {
+	margin: 0 10px;
+	color: #999;
+}
+
+.order_address_info .operation {
+	display: block;
+}
+
+.user_address li .operation .modify {
+	visibility: visible;
+	margin: 0 30px;
+}
+
+
+.order_address_info .operation a {
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.order_address_info .operation .set-default {
+	display: none;
+}
+
+.user_address .form-add {
+	margin: 10px 10px 10px 20px;
+	padding: 10px;
+	border: solid 1px #f0f0f0;
+	display: none;
+	float: left;
+}
+
+.user_address form li label {
+	cursor: pointer;
+	min-width: 100px;
+	margin-bottom: 5px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+form label b {
+	color: #c00;
+}
+
+.user_address .form-add li {
+	padding: 8px 20px;
+	transition: padding .5s;
+	float: left;
+	width: 1000px;
+	margin: 10px;
+	position: relative;
+}
+
+.user_address .form-add li:hover {
+	background-color: #f9f9f9;
+}
+
+.input-text,
+input[type="text"],
+input[type="password"],
+textarea {
+	padding: 7px 5px;
+	line-height: 24px;
+	color: #333;
+	border: solid 1px #e9e9e9;
+	transition: border .2s, box-shadow .2s;
+	background: #fff;
+}
+
+select {
+	line-height: 24px;
+	padding: 5px;
+	background: #fff;
+}
+
+.user_address button {
+	border-style: none;
+}
+
+.cList_title {
+	width: 100%;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #eee;
+	background: #fcfcfc;
+	border: solid 1px #f0f0f0;
+	border-radius: 3px 3px 0 0;
+	padding: 12px 0;
+}
+
+.cList_title span {
+	padding-left: 20px;
+	color: #333;
+	font-size: 16px;
+}
+
+.cList_head {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-left: solid 1px #f0f0f0;
+	border-right: solid 1px #f0f0f0;
+}
+
+.cList_head li {
+	text-align: center;
+	position: relative;
+}
+
+.col1 {
+	width: 60%;
+	float: left;
+	text-align: center;
+}
+
+.col2 {
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+
+.col3 {
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+
+.col4 {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.cList_head li:after {
+	width: 1px;
+	height: 18px;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 12px;
+	background: #ddd;
+}
+
+.cList_head .col4:after {
+	width: 0;
+}
+
+.cList_box {
+	width: 100%;
+	border: solid 1px #f0f0f0;
+	border-top: none;
+	padding: 16px 0;
+}
+
+.cList_box input[type='checkbox'] {
+	margin-top: 20px;
+}
+
+.cList_box .col1 {
+	text-align: left;
+}
+
+.cList_box .detail {
+	padding: 0 10px;
+}
+
+.cList_box .name a {
+	font-size: 14px;
+	color: #333;
+	display: block;
+	padding-bottom: 10px
+}
+
+.cList_box .name a:hover {
+	color: #d91864;
+}
+
+.pic {
+	display: inline;
+}
+
+.cList_box .col2 s {
+	color: #a49fa5;
+}
+
+.cList_box .price,
+.cList_box .subtotal,
+.cList_box .sum,
+{
+	padding-top: 25px;
+	display: inline-block;
+}
+
+.cList_box .sum {
+	color: #d91864;
+}
+
+.cList_box:hover {
+	background-color: #f9f9f9;
+}
+
+.total_price {
+	border: 1px solid #e9e9e9;
+	padding: 10px 30px;
+	margin-bottom: 30px;
+}
+
+i {
+	font-style: normal;
+}
+
+.total_price li {
+	height: 26px;
+	line-height: 26px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.total_price .totalItem {
+	font-weight: bold;
+	color: #d91966;
+	padding-right: 3px;
+}
+
+.cList_foot {
+	border: solid 1px #e9e9e9;
+	border-top: none;
+	background-color: #f9f9f9;
+}
+
+.cList_foot .other {
+	width: 1044px;
+	text-align: right;
+	font-size: 16px;
+	padding: 0 20px 0;
+	float: left;
+	line-height: 50px;
+}
+
+.cList_foot .other .total {
+	color: #f22867;
+}
+
+.cList_foot .btns button {
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	border-radius: 0px;
+	font-size: 14px;
+	border: none;
+}
+
+.btn-red {
+	background: #f22867;
+}
+
+.shoppingCart .pay_method h3 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 30px;
+	padding: 0 0 20px 0;
+	color: #f22867;
+}
+
+.pay_method .sele_pay {
+	padding-bottom: 20px;
+	font-size: 14px;
+}
+
+.pay_method .step_radio {
+	display: inline;
+	float: left;
+	background: #fff;
+	border: 2px solid #E4E4E4;
+	margin: 0 16px 15px 0;
+	width: 132px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.pay_method .step_radio:hover {
+	border-color: #d91864;
+}
+
+.pay_method .step_radio.selected {
+	border-color: #d91864;
+}
+
+.pay_method .alipayForex {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -38px;
+	position: absolute;
+	top: 4px;
+	left: 8px;
+}
+.pay_icon{
+	display: inline-block;
+	background: url(../img/pay-type.jpg) no-repeat;
+}
+
+.pay_method .step_radio label {
+	margin: 4px 10px;
+	padding: 7px 0;
+	
+}
+
+.step_radio label span {
+	padding-left: 38px;
+	font-size: 14px;
+}
+.step_radio.selected .arrow {
+	display: block;
+}
+.step_radio .arrow {
+	display: none;
+	background: url(../img/icon01.png) no-repeat -37px -11px;
+	height: 17px;
+	width: 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.step_radio input {
+	display: none;
+}
+
+.pay_method .step_radio .wx_pay {
+	width: 32px;
+	height: 32px;
+	background-position: 0 0;
+	position: absolute;
+	top: 5px;
+	left: 8px;
+}
+
+.pay_method .step_radio .paypal {
+	width: 90px;
+	height: 32px;
+	background-position: 10px -155px;
+	position: absolute;
+	top: 4px;
+	left: 10px;
+}
+
+.step_radio .paypal span {
+	padding-left: 100px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.tool {
+	font-size: 16px;
+	padding: 30px 30px 50px;
+	border: 1px solid #eee;
+	border-top: none;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+.shoppingCart .toolinfo h3 {
+	font-size: 18px;
+}
+
+.shoppingCart .tool ul li {
+	text-align: right;
+	line-height: 36px;
+}
+
+.shoppingCart .tool .label {
+	width: 85%;
+	display: inline-block;
+	float: left;
+}
+
+.shoppingCart .tool .confirm {
+	margin-top: 10px;
+	border-top: solid 1px #ccc;
+}
+
+.shoppingCart .tool .amount {
+	color: #d91966;
+}
+
+.shoppingCart .tool .confirm .main {
+	margin: 15px 0;
+	font-size: 21px;
+	color: #d91966;
+}
+
+.shoppingCart .tool .confirm .address {
+	font-size: 14px;
+}
+
+.shoppingCart .tool .confirm .btn {
+	margin-right: 0;
+}
+.footer_box ul,
+li,
+ol,
+p {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer_box a {
+	color: #333;
+}
+
+.footer_box a:focus {
+	outline: none;
+}
+
+.footer_help a:hover {
+	color: #ea1c50;
+}
+
+.footer_box {
+	color: #1c040e;
+	margin-top: 20px;
+	padding-top: 20px;
+	background: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+.common_wrapper,
+.wrap {
+	width: 1186px;
+	margin: 0 auto;
+}
+
+.footer_help {
+	width: 1200px;
+	margin-bottom: 20px;
+	display: inline-block;
+	padding-left: 0;
+}
+
+.footer_help .dilan_logo {
+	width: 102px;
+	height: 54px;
+	line-height: 54;
+	overflow: hidden;
+	background: url("../img/dilan-logo.png") no-repeat;
+	float: left;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.footer_help ul {
+	background: url("../img/addorder.png") no-repeat;
+	display: inline-block;
+}
+
+.footer_help li {
+	width: 156px;
+	float: left;
+	padding: 5px 0 0 45px;
+	display: inline-block;
+}
+
+.footer_help li p {
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.policy {
+	background: #f9f9f9;
+	border-top: 1px solid #e9e8e8;
+	padding: 0 0 12px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.policy li {
+	font-size: 14px;
+	color: #1c040e;
+	display: inline;
+}
+
+.policy li a {
+	display: inline-block;
+	color: #1c040e;
+	padding: 0 20px;
+	font-size: 14px;
+	letter-spacing: 0px;
+	vertical-align: top;
+}
+
+.copyright {
+	color: #9e9a9c;
+	position: relative;
+	overflow: hidden;
+	line-height: 18px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.copyright p {
+	line-height: 23px;
+}
+
+.copyright a {
+	color: #9e9a9c;
+}
+
+.paylogo {
+	text-align: center;
+	margin-top: 10px;
+	height: 25px;
+	background: url("../img/paylogo.png") no-repeat center;
+}

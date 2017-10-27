@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/ProductList.css" />
+		<style type="text/css">
+			.footer_box ul,
+			li,
+			ol,
+			p {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.footer_box a {
+				color: #333;
+			}
+			
+			.footer_box a:focus {
+				outline: none;
+			}
+			
+			.footer_help a:hover {
+				color: #ea1c50;
+			}
+			
+			.footer_box {
+				color: #1c040e;
+				margin-top: 20px;
+				padding-top: 20px;
+				background: #fff;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.common_wrapper,
+			.wrap {
+				width: 1186px;
+				margin: 0 auto;
+			}
+			
+			.footer_help {
+				width: 1200px;
+				margin-bottom: 20px;
+				display: inline-block;
+				padding-left: 0;
+			}
+			
+			.footer_help .dilan_logo {
+				width: 102px;
+				height: 54px;
+				line-height: 54;
+				overflow: hidden;
+				background: url("img/dilan-logo.png") no-repeat;
+				float: left;
+				margin-top: 15px;
+				margin-right: 20px;
+			}
+			
+			.footer_help ul {
+				background: url("img/addorder.png") no-repeat;
+				display: inline-block;
+			}
+			
+			.footer_help li {
+				width: 156px;
+				float: left;
+				padding: 5px 0 0 45px;
+				display: inline-block;
+			}
+			
+			.footer_help li p {
+				line-height: 26px;
+				font-size: 12px;
+			}
+			
+			.policy {
+				background: #f9f9f9;
+				border-top: 1px solid #e9e8e8;
+				padding: 0 0 12px;
+				text-align: center;
+				padding: 10px 0;
+			}
+			
+			.policy li {
+				font-size: 14px;
+				color: #1c040e;
+				display: inline;
+			}
+			
+			.policy li a {
+				display: inline-block;
+				color: #1c040e;
+				padding: 0 20px;
+				font-size: 14px;
+				letter-spacing: 0px;
+				vertical-align: top;
+			}
+			
+			.copyright {
+				color: #9e9a9c;
+				position: relative;
+				overflow: hidden;
+				line-height: 18px;
+				letter-spacing: 0px;
+				text-align: center;
+			}
+			
+			.copyright p {
+				line-height: 23px;
+			}
+			
+			.copyright a {
+				color: #9e9a9c;
+			}
+			
+			.paylogo {
+				text-align: center;
+				margin-top: 10px;
+				height: 25px;
+				background: url("img/paylogo.png") no-repeat center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="head_top">
+			<ul class="container clearfix">
+				<li class="fl">hi~唯美美妆欢迎爱美的你~！</li>
+				<li class="fl">
+					<a href="log.html">马上登录</a>
+				</li>
+				<li class="line fl">|</li>
+				<li class="fl">
+					<a href="resiger.html">立即注册</a>
+				</li>
+				<li class="fr">
+					<a href="welcome.html">个人中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">帮助中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">品牌入驻</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">开放平台</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">隐私条款</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="app fr relative">
+					<a href="#">
+						<img src="img/icon_app.png" /> 手机唯美美妆
+					</a>
+					<div class="app_phone">
+						<span class="app_arrow"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--logo&搜索框-->
+		<div class="head">
+			<div class="container clearfix">
+				<!--logo-->
+				<div class="logo fl">
+					<a href="index.html">
+						<span class="l_name">唯美美妆</span>
+						<span class="l_website">VMEI.COM</span>
+					</a>
+				</div>
+				<!--搜索框-->
+				<div class="search fl clearfix">
+					<form class="clearfix" autocomplete="off" action="/products" method="get" id="topSearchBar">
+						<input type="hidden" name="nid" value="">
+						<div class="search-table ser_all fl clearfix">
+							<span class="cur fl">
+                        		<div class="search_icon"></div>
+          					</span>
+							<div class="list">
+								<ul>
+									<li>
+										<a name="all">全部</a>
+									</li>
+									<li>
+										<a name="all">护肤</a>
+									</li>
+									<li>
+										<a name="all">彩妆</a>
+									</li>
+									<li>
+										<a name="all">香水</a>
+									</li>
+									<li>
+										<a name="all">身体护理</a>
+									</li>
+									<li>
+										<a name="all">洗发护发</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<span class="txt fl" style="position: relative;">
+							<input type="text" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" data-default="香水" name="keyword" value="">
+						</span>
+						<span class="searchBtn fl"><input type="submit" value=""></span>
+					</form>
+					<div class="top_search">
+						<a title="" href="ProductList0.html">保湿</a>
+						<a title="" href="ProductList1.html">兰蔻</a>
+						<a title="" href="ProductList2.html">雅诗兰黛</a>
+						<a title="" href="ProductList2.html">控油</a>
+						<a title="" href="ProductList0.html">去角质</a>
+						<a title="" href="ProductList1.html">防晒</a>
+						<a title="" href="ProductList2.html">减肥</a>
+						<a title="" href="ProductList0.html">脱毛</a>
+					</div>
+					<div id="bigAutocompleteContent" class="searchBox"></div>
+				</div>
+				<!--购物车-->
+				<div class="shop fr clearfix relative">
+					<a href="shopping_cart.html" class="shop-bag relative fl">
+						<span><img src="img/gwc.png"></span>
+						<span class="cart_hover">购物袋 (0)</span>
+						<span>：</span>
+						<span class="bag_precie">￥0.00</span>
+						<span class="bag_tips"></span>
+					</a>
+					<div class="gwc-cont">
+						<div class="mycart_popup">
+							<div class="tip">购物车暂无商品<br>快去挑选自己钟爱的商品吧~~</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="hNav_box">
+			<div class="hNav container">
+				<ul class="nav_title clearfix">
+					<li class="fl">
+						<a href="index.html" class="title">首页</a>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">护肤</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">卸妆</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">洁面</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面膜</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面霜</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">彩妆</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">粉底</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">隔离</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">遮瑕</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眉笔</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眼线</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美唇</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList2.html" class="title">香水</a>
+						<dl>
+							<dd>
+								<a href="ProductList2.html">香水EDP</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">淡香水EDT</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">固体香水</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">香体乳</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">身体护理</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">沐浴用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">身体护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">纤维护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">手足部护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">脱毛用品</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">洗发护发</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">洗发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">护发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美发用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">烫发染发</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<!--小房子-->
+			<div class="house">
+				<a href="index.html"></a>
+			</div>
+			<!--分类表格-->
+			<div>
+				<table class="table" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th colspan="2">在中筛选</th>
+					</tr>
+					<tr>
+						<th>品牌</th>
+						<td class="classify clearfix">
+							<ul class="fl clearfix">
+								<li class="fl">
+									<a href="ProductList0.html">全部</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Armani/阿玛尼</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Banila CO/芭妮兰</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Beauty Bubble</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Bleu Clair/纽之蓝</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Botanic Farm/植物乐园</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Chanel/香奈儿</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Cloud 9/九朵云</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Dior/迪奥</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Estee Lauder/雅诗兰黛</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">EtudeHouse/爱丽小屋</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Armani/阿玛尼</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Banila CO/芭妮兰</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Beauty Bubble</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Bleu Clair/纽之蓝</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Botanic Farm/植物乐园</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Chanel/香奈儿</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Cloud 9/九朵云</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Dior/迪奥</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Estee Lauder/雅诗兰黛</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">EtudeHouse/爱丽小屋</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Armani/阿玛尼</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Banila CO/芭妮兰</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Beauty Bubble</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Bleu Clair/纽之蓝</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Botanic Farm/植物乐园</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Chanel/香奈儿</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">Cloud 9/九朵云</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">Dior/迪奥</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">Estee Lauder/雅诗兰黛</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">EtudeHouse/爱丽小屋</a>
+								</li>
+							</ul>
+							<div class="more fr">
+								展开>>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>功效</th>
+						<td class="classify clearfix">
+							<ul class="fl clearfix">
+								<li class="fl">
+									<a href="ProductList0.html">全部</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">三效合一</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">不干燥</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">不油腻</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">亮丽神采</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">促进代谢</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">保湿提亮</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">保湿补水滋养</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">修复疲劳肌肤</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">去眼袋浮肿</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">深层卸妆</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">三效合一</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">不干燥</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">不油腻</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">亮丽神采</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">促进代谢</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">保湿提亮</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">保湿补水滋养</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">修复疲劳肌肤</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">去眼袋浮肿</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">深层卸妆</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">三效合一</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">不干燥</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">不油腻</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">亮丽神采</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">促进代谢</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">保湿提亮</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">保湿补水滋养</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">修复疲劳肌肤</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">去眼袋浮肿</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">深层卸妆</a>
+								</li>
+							</ul>
+							<div class="more fr">
+								展开>>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>适合肤质</th>
+						<td class="classify clearfix">
+							<ul class="fl clearfix">
+								<li class="fl">
+									<a href="ProductList0.html">全部</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">中性肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">压力型肌肤</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">干性肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">所有肌肤</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">敏感性肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">暗疮性肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">暗疮性肌肤</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">油性肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList0.html">混合肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList1.html">痘痘肤质</a>
+								</li>
+								<li class="fl">
+									<a href="ProductList2.html">脸部</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--找到商品数量-->
+			<div class="find-num">
+				<span>找到了</span>
+				<b class="num">123</b>
+				<span>个类似商品</span>
+			</div>
+			<!--排序翻页-->
+			<div class="fl">
+				<ul class="sort clearfix">
+					<li class="fl">默认</li>
+					<li class="fl">销量
+						<p></p>
+					</li>
+					<li class="fl">评分数
+						<p></p>
+					</li>
+					<li class="fl">上架时间
+						<p></p>
+					</li>
+					<li class="fl">价格
+						<p></p>
+					</li>
+				</ul>
+			</div>
+			<div class="fl price-range clearfix">
+				<input class="fl" placeholder="￥价格" type="text" id="min" value="" />
+				<div class="fl" style="padding-top: 3px;">-</div>
+				<input class="fl" placeholder="￥价格" type="text" id="max" value="" />
+				<input class="confirm fl" type="button" id="confirm" value="确定" />
+			</div>
+			<div class="page fl clearfix">
+				<ul class="fr">
+					<li class="trans3">GO</li>
+				</ul>
+				<div class="fr">
+					页
+				</div>
+				<input class="fr" type="text" id="page-num" value="" />
+				<div class="fr">
+					到
+				</div>
+				<ul class="fr">
+					<li id="last" class="trans3">&laquo;</li>
+					<li class="trans3 page-num">1</li>
+					<li id="next" class="trans3">&raquo;</li>
+				</ul>
+			</div>
+			<div class="clearfix">
+
+			</div>
+			<!--商品列表-->
+			<div class="relative goods-box">
+				<ul class="clearfix goods">
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-1-1.jpg" />
+							<img src="img/ProductPictures/Chanel-1-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-1-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-1-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 哑致柔滑唇彩6ml 丝绒哑光短管唇釉</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>255.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥350.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-2-1.jpg" />
+							<img src="img/ProductPictures/Chanel-2-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-2-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-2-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 水亮系列口红可可小姐唇膏3g coco shine 轻盈滋润 达人推荐</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>265.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥320.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-3-1.jpg" />
+							<img src="img/ProductPictures/Chanel-3-2.jpg" />
+							<img src="img/ProductPictures/Chanel-3-3.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-3-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-3-2s.jpg" />
+							<img src="img/ProductPictures/Chanel-3-3s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 蔚蓝男士香水50ml/100ml 持久留香 浓香EDP</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>694.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥795.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-4-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-4-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 十九号香精(点式)7.5ml 经典喷式香精EDP</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>1088.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥1200.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-5-1.jpg" />
+							<img src="img/ProductPictures/Chanel-5-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-5-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-5-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 防水持久型眼线笔0.3g 防油持久不晕染 附卷笔刀</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>204.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥250.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-6-1.jpg" />
+							<img src="img/ProductPictures/Chanel-6-2.jpg" />
+							<img src="img/ProductPictures/Chanel-6-3.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-6-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-6-2s.jpg" />
+							<img src="img/ProductPictures/Chanel-6-3s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 指甲油13ml 色彩亮丽 强化保护指甲</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>204.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥240.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-7-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-7-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 山茶花保湿微精华露5ml 持久保湿 小样体验装</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>25.00</strong>
+						</div>
+						<div class="shoppe-price">
+							香港专柜价：HK$229.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-8-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-8-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 山茶花保湿精华水10ml 补水保湿 小样体验装</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>25.00</strong>
+						</div>
+						<div class="shoppe-price">
+							香港专柜价：HK$65.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-9-1.jpg" />
+							<img src="img/ProductPictures/Chanel-9-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-9-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-9-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 单色腮红4g 经典款胭脂 持久显色 易上妆</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>388.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥470.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-10-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-10-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 青春光彩保湿粉凝霜10g 防晒遮瑕 控油保湿</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>359.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥460.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-11-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-11-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 COCO CODE四色修容胭脂腮红11g 2017春季限量</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>539.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥650.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-12-1.jpg" />
+							<img src="img/ProductPictures/Chanel-12-2.jpg" />
+							<img src="img/ProductPictures/Chanel-12-3.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-12-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-12-2s.jpg" />
+							<img src="img/ProductPictures/Chanel-12-3s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 完美立体臻魅睫毛膏6g 防水防晕 纤长浓密卷翘</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>291.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥350.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-13-1.jpg" />
+							<img src="img/ProductPictures/Chanel-13-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-13-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-13-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 可可小姐女士香水旅行装20ml*3 便携装EDP</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>998.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥1270.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-14-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-14-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 流金幻影四色眼影2g 细致质地 2016夏季限量版</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>492.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥530.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-15-1.jpg" />
+							<img src="img/ProductPictures/Chanel-15-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-15-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-15-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 极致浓密卷曲防水睫毛膏6g 防水防汗</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>291.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥350.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-16-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-16-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 智慧紧肤修护精华水150ml 提拉紧致 抗皱化妆水</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>568.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥750.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-17-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-17-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 珍珠光采防晒遮瑕膏2.7g SPF40/PA+++ 无痕遮瑕 轻便防晒</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>286.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥295.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-18-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-18-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 臻美光透粉饼SPF25/PA+++ 12g 纯净光采控油粉饼 明亮光采</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>495.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥510.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-19-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-19-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 柔润亮彩唇膏3.5g 遮瑕滋润保湿 达人推荐 RC</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>245.00</strong>
+						</div>
+						<div class="shoppe-price">
+							香港专柜价：HK$536.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-20-1.jpg" />
+							<img src="img/ProductPictures/Chanel-20-2.jpg" />
+							<img src="img/ProductPictures/Chanel-20-3.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-20-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-20-2s.jpg" />
+							<img src="img/ProductPictures/Chanel-20-3s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 五号女士香水淡香精50ml/100ml 花香调EDP</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>903.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥1060.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-21-1.jpg" />
+							<img src="img/ProductPictures/Chanel-21-2.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-21-1s.jpg" />
+							<img src="img/ProductPictures/Chanel-21-2s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 幻彩柔滑单色眼影笔1.4g 珠光持妆 不晕染</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>300.00</strong>
+						</div>
+						<div class="shoppe-price">
+							香港专柜价：HK$508.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-22-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-22-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 珍珠光采洁肤乳150ml 美白洁肤乳 净彻肌肤 透白明亮</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>412.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥505.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 1.html">
+							<img src="img/ProductPictures/Chanel-23-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-23-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 1.html">Chanel/香奈儿 圆形单色腮红6g 持久显色 易上妆</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>388.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥470.00
+						</div>
+					</li>
+					<li class="product fl trans3">
+						<a class="product-pic relative" href="Hera 2.html">
+							<img src="img/ProductPictures/Chanel-24-1.jpg" />
+						</a>
+						<div class="small-pic">
+							<img src="img/ProductPictures/Chanel-24-1s.jpg" />
+						</div>
+						<div class="product-name">
+							<a href="Hera 2.html">Chanel/香奈儿 智慧紧肤乳液精华油50ml 深度抗老 滋润紧致</a>
+						</div>
+						<div class="product-price">
+							￥
+							<strong>1244.00</strong>
+						</div>
+						<div class="shoppe-price">
+							大陆专柜价：¥1360.00
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!--底部翻页-->
+			<div class="page-bottom clearfix">
+				<ul class="fr">
+					<li class="trans3">GO</li>
+				</ul>
+				<div class="fr">
+					页
+				</div>
+				<input class="fr" type="text" id="page-num-bottom" value="" />
+				<div class="fr">
+					到
+				</div>
+				<ul class="fr">
+					<li class="trans3">&laquo;</li>
+					<li class="trans3">1</li>
+					<li class="trans3">&raquo;</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer_box clearfix">
+			<div class="wrap clearfix">
+				<div class="footer_help">
+					<a class="dilan_logo" href="/">logo</a>
+					<ul>
+						<li>
+							<p><strong>帮助FAQ</strong></p>
+							<p>
+								<a href="help.html" target="_blank">注册/登录</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">购物流程</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">售后服务</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">积分说明</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">会员等级</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>支付服务</strong></p>
+							<p>
+								<a href="help.html" target="_blank">在线支付</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">货到付款</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">常见问题</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">微信关注</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>配送服务</strong></p>
+							<p>
+								<a href="help.html" target="_blank">配送方式</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">配送时间</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>关于我们</strong></p>
+							<p>
+								<a href="help.html" target="_blank">关于唯美美妆</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">申请加入唯美美妆</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">商务合作</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">使用条款及法律资料</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">个人隐私和安全保障</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>订单问题</strong></p>
+							<p>
+								<a href="help.html" target="_blank">如何修改订单</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">如何取消订单</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">商品降价如何处理</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">为何订单被关闭</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">订单取消成功为何无退款</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="policy clearfix">
+				<div class="wrap">
+					<ul class="clearfix">
+						<li>
+							<a href="help.html" target="_blank" title="关于我们">关于我们</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="友情链接">友情链接</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="商家入驻">商家入驻</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="开放平台">开放平台</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="加入我们">加入我们</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="商务合作">商务合作</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="隐私条例">隐私条例</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="使用条款">使用条款</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						<p>Copyright © 2006 - 2016
+							<a href="help.html">南京思芙美网络科技有限公司 VMEI.COM</a> 保留一切权利 商业登记证号 : 62052243-000</p>
+						<p class="paylogo"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//分类事件
+			$(".classify").each(function() {
+				var self = $(this);
+				$(".classify").eq(0).find("li").eq(1).find("a").css({
+					"background-color": "#D91864",
+					"color": "#ffffff"
+				});
+				$(".classify").eq(1).find("li").eq(0).find("a").css({
+					"background-color": "#D91864",
+					"color": "#ffffff"
+				});
+				$(".classify").eq(2).find("li").eq(0).find("a").css({
+					"background-color": "#D91864",
+					"color": "#ffffff"
+				});
+
+				$(this).find("li a").hover(function() {
+					if($(this).css("color") == "rgb(255, 255, 255)") {
+						$(this).css("background-color", "#D91864");
+					} else {
+						$(this).css("background-color", "gainsboro");
+					};
+				}, function() {
+					if($(this).css("color") == "rgb(255, 255, 255)") {
+						$(this).css("background-color", "#D91864");
+					} else {
+						$(this).css("background-color", "#FFFFFF");
+					};
+				});
+				$(this).find("li a").click(function() {
+					self.find("li a").css({
+						"background-color": "#ffffff",
+						"color": "#737272"
+					})
+					$(this).css({
+						"background-color": "#D91864",
+						"color": "#ffffff"
+					})
+				});
+			});
+			//更多
+			$(".more").hover(function() {
+				$(this).css("background-color", "gainsboro");
+			}, function() {
+				$(this).css("background-color", "#FFFFFF");
+			});
+			$(".more").click(function() {
+				if($(this).parents(".classify").css("height") == "70px") {
+					$(this).parents(".classify").css("height", "210px");
+					$(this).html("<<收起")
+				} else {
+					$(this).parents(".classify").css("height", "70px");
+					$(this).html("展开>>")
+				}
+			});
+			//找到商品个数
+			$(".find-num .num").html($(".product").length)
+			//排序
+			$(".sort li").eq(0).css({
+				"background-color": "#D91864",
+				"color": "#ffffff"
+			})
+			$(".sort li").hover(function() {
+				if($(this).css("color") != "rgb(255, 255, 255)") {
+					$(this).css("color", "#D91864");
+					$(this).find("p").css("background-position", "-8px -32px");
+				};
+			}, function() {
+				if($(this).css("color") != "rgb(255, 255, 255)") {
+					$(this).css("color", "#333")
+					$(this).find("p").css("background-position", "0 -32px");
+				};
+			});
+			var x = 0;
+			$(".sort li").click(function() {
+				$(".sort li").css({
+					"background-color": "#efefef",
+					"color": "#333"
+				});
+				$(".sort li").find("p").css("background-position", "0 -32px");
+				if($(this).index() == 1 || $(this).index() == 3) {
+					$(this).css({
+						"background-color": "#D91864",
+						"color": "#ffffff"
+					});
+					if(x == 0) {
+						$(this).find("p").css("background-position", "-32px -42px");
+						x = 1;
+					} else {
+						$(this).find("p").css("background-position", "-40px -42px");
+						x = 0;
+					};
+
+				} else {
+					$(this).css({
+						"background-color": "#D91864",
+						"color": "#ffffff"
+					});
+					if(x == 0) {
+						$(this).find("p").css("background-position", "-40px -42px");
+						x = 1;
+					} else {
+						$(this).find("p").css("background-position", "-32px -42px");
+						x = 0;
+					};
+				};
+			});
+			//价格排序
+			$(".sort li").eq(4).click(function() {
+				var prt = [];
+				var price = [];
+				$(".goods li").each(function() {
+					prt.push($(this));
+					price.push(parseFloat($(this).find(".product-price strong").html()));
+				});
+				if($(this).find("p").css("background-position") == "-40px -42px") {
+					for(var i = 0; i < prt.length; i++) {
+						for(var j = i + 1; j < prt.length; j++) {
+							if(price[i] > price[j]) {
+								var x = price[i];
+								price[i] = price[j];
+								price[j] = x;
+								var y = prt[i];
+								prt[i] = prt[j];
+								prt[j] = y;
+							};
+						};
+					};
+					$(".goods").append(prt);
+				} else {
+					for(var i = 0; i < prt.length; i++) {
+						for(var j = i + 1; j < prt.length; j++) {
+							if(price[i] < price[j]) {
+								var x = price[i];
+								price[i] = price[j];
+								price[j] = x;
+								var y = prt[i];
+								prt[i] = prt[j];
+								prt[j] = y;
+							};
+						};
+					};
+					$(".goods").append(prt);
+				}
+
+			});
+			//价格区间
+			$("#confirm").click(function() {
+				var min = parseFloat($("#min").val());
+				var max = parseFloat($("#max").val());
+				var arr = [];
+				$(".product").each(function() {
+					var prc = parseFloat($(this).find(".product-price strong").html());
+					if(prc >= min && prc <= max) {
+						arr.push($(this))
+					}
+				});
+				$(".goods").html("");
+				$(".goods").append(arr);
+				$(".find-num .num").html(arr.length);
+			});
+			//页码
+			$(".goods-box .goods").eq(0).css("display", "block");
+			//商品图片切换
+			$(".product").each(function() {
+				self = $(this);
+				$(this).find(".small-pic img").eq(0).css("border-color", "#D4105A");
+				$(this).find(".product-pic img").eq(0).css("z-index", "1");
+				$(this).find(".small-pic img").click(function() {
+					$(this).siblings(".small-pic img").css("border-color", "#eceaea");
+					$(this).css("border-color", "#D4105A");
+					$(this).parent().siblings(".product-pic").find("img").css("z-index", "0");
+					$(this).parent().siblings(".product-pic").find("img").eq($(this).index()).css("z-index", "1");
+				});
+			});
+
+		});
+	</script>
+
+</html>

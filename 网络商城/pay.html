@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/pay.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="head_top">
+			<ul class="container clearfix">
+				<li class="fl">hi~唯美美妆欢迎爱美的你~！</li>
+				<li class="fl">
+					<a href="log.html">马上登录</a>
+				</li>
+				<li class="line fl">|</li>
+				<li class="fl">
+					<a href="resiger.html">立即注册</a>
+				</li>
+				<li class="fr">
+					<a href="welcome.html">个人中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">帮助中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">品牌入驻</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">开放平台</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">隐私条款</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="app fr relative">
+					<a href="#">
+						<img src="img/icon_app.png" /> 手机唯美美妆
+					</a>
+					<div class="app_phone">
+						<span class="app_arrow"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--logo&搜索框-->
+		<div class="head">
+			<div class="container clearfix">
+				<!--logo-->
+				<div class="logo fl">
+					<a href="index.html">
+						<span class="l_name">唯美美妆</span>
+						<span class="l_website">VMEI.COM</span>
+					</a>
+				</div>
+				<!--搜索框-->
+				<div class="search fl clearfix">
+					<form class="clearfix" autocomplete="off" action="/products" method="get" id="topSearchBar">
+						<input type="hidden" name="nid" value="">
+						<div class="search-table ser_all fl clearfix">
+							<span class="cur fl">
+                        		<div class="search_icon"></div>
+          					</span>
+							<div class="list">
+								<ul>
+									<li>
+										<a name="all">全部</a>
+									</li>
+									<li>
+										<a name="all">护肤</a>
+									</li>
+									<li>
+										<a name="all">彩妆</a>
+									</li>
+									<li>
+										<a name="all">香水</a>
+									</li>
+									<li>
+										<a name="all">身体护理</a>
+									</li>
+									<li>
+										<a name="all">洗发护发</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<span class="txt fl" style="position: relative;">
+							<input type="text" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" data-default="香水" name="keyword" value="">
+						</span>
+						<span class="searchBtn fl"><input type="submit" value=""></span>
+					</form>
+					<div class="top_search">
+						<a title="" href="ProductList0.html">保湿</a>
+						<a title="" href="ProductList1.html">兰蔻</a>
+						<a title="" href="ProductList2.html">雅诗兰黛</a>
+						<a title="" href="ProductList2.html">控油</a>
+						<a title="" href="ProductList0.html">去角质</a>
+						<a title="" href="ProductList1.html">防晒</a>
+						<a title="" href="ProductList2.html">减肥</a>
+						<a title="" href="ProductList0.html">脱毛</a>
+					</div>
+					<div id="bigAutocompleteContent" class="searchBox"></div>
+				</div>
+				<!--购物车-->
+				<div class="shop fr clearfix relative">
+					<a href="shopping_cart.html" class="shop-bag relative fl">
+						<span><img src="img/gwc.png"></span>
+						<span class="cart_hover">购物袋 (0)</span>
+						<span>：</span>
+						<span class="bag_precie">￥0.00</span>
+						<span class="bag_tips"></span>
+					</a>
+					<div class="gwc-cont">
+						<div class="mycart_popup">
+							<div class="tip">购物车暂无商品<br>快去挑选自己钟爱的商品吧~~</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="hNav_box">
+			<div class="hNav container">
+				<ul class="nav_title clearfix">
+					<li class="fl">
+						<a href="index.html" class="title">首页</a>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">护肤</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">卸妆</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">洁面</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面膜</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面霜</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">彩妆</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">粉底</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">隔离</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">遮瑕</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眉笔</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眼线</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美唇</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList2.html" class="title">香水</a>
+						<dl>
+							<dd>
+								<a href="ProductList2.html">香水EDP</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">淡香水EDT</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">固体香水</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">香体乳</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">身体护理</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">沐浴用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">身体护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">纤维护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">手足部护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">脱毛用品</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">洗发护发</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">洗发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">护发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美发用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">烫发染发</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--分割线-->
+		<div class="container">
+			<div class="shoppingCart container">
+				<!--流程-->
+				<div class="mycar_hd">
+					<ul class="schedule schedule01 clearfix">
+						<li>1.我的购物车</li>
+						<li>2.填写核对订单信息</li>
+						<li class="selected">3.成功提交订单</li>
+					</ul>
+				</div>
+				<div class="page-pay">
+					<div class="e_region container wrap clearfix" id="content">
+						<div class="scc_info infobox">
+							<h2>您的订单已创建，请核对下购物金额</h2>
+						</div>
+						<div class="pay_detail">
+							<a href="myOrder.html" class="other">查看订单信息</a>
+							<p class="impor">应付金额：<strong>￥379.00</strong></p>
+							<p>收货信息：xxx， 中国大陆,山东,青岛,城阳区,xx路xxx号， 手机：178xxxxxxxx， 邮编：xxxxxx</p>
+						</div>
+
+						<div class="order_payment">
+
+							<div class="info">请于12小时内完成支付，逾时系统将取消您的订单。</div>
+							<div class="pay_method clearfix">
+								<h3>支付方式</h3>
+									<div class="step_radio relative">
+										<i class="pay_icon alipayForex"></i>
+										<label for="Payment4">
+                    		<span>支付宝</span>
+                    		<input type="radio" id="Payment4" data-id="4" data-name="支付宝" data-code="alipayForex" name="payment" checked="">
+                		</label>
+										<i class="arrow"></i>
+									</div>
+									<div class="step_radio relative">
+										<i class="pay_icon wx_pay"></i>
+										<label for="Payment4">
+                    		<span>微信支付</span>
+                    		<input type="radio" id="Payment4" data-id="4" data-name="微信支付" data-code="wx_pay" name="payment" checked="">
+                		</label>
+										<i class="arrow"></i>
+									</div>
+									<div class="step_radio relative">
+										<i class="pay_icon paypal"></i>
+										<label for="Payment4">
+							<span></span>
+                    		<input type="radio" id="Payment4" data-id="4" data-name="paypal" data-code="paypal" name="payment" checked="">
+                		</label>
+										<i class="arrow"></i>
+									</div>
+
+								</div>
+							</div>
+							<div class="payEwm" style="width: 100%; text-align: center; display: none;">
+								<p style="font-size:15px;font-weight:bold;margin-bottom:5px;">使用微信扫码以下二维码完成支付</p>
+								<img src="" width="250" height="250">
+							</div>
+							<div class="btn_w">
+								<form id="toPayForm" target="_blank" method="post" action="/order/pay">
+									<input type="hidden" value="201709011720577844" name="orderNo">
+									<input type="submit" value="立即付款" class="btn-orange">
+								</form>
+							</div>
+							<div class="bottomcontent">
+								<span class="info_tips">
+        					如果您有任何问题可以与我们联系：【
+        					<a href="/help/63" target="_blank">联系客服</a>
+        					】
+    					</span>
+								<span class="info_tips">
+        					<h4>温馨提示：</h4>
+        					<p>您在收货时，若发现下列情形，请您务必<strong>拒收</strong>并与我们联系：</p>
+        					<p>1. 外包装有明显污损及其他损坏情况</p>
+        					<p>2. 产品原包装已拆封或有明显污损及其他损坏情况</p>
+   						</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部-->
+			<div class="footer_box clearfix">
+				<div class="wrap clearfix">
+					<div class="footer_help">
+						<a class="dilan_logo" href="/">logo</a>
+						<ul>
+							<li>
+								<p><strong>帮助FAQ</strong></p>
+								<p>
+									<a href="help.html" target="_blank">注册/登录</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">购物流程</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">售后服务</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">积分说明</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">会员等级</a>
+								</p>
+							</li>
+							<li>
+								<p><strong>支付服务</strong></p>
+								<p>
+									<a href="help.html" target="_blank">在线支付</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">货到付款</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">常见问题</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">微信关注</a>
+								</p>
+							</li>
+							<li>
+								<p><strong>配送服务</strong></p>
+								<p>
+									<a href="help.html" target="_blank">配送方式</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">配送时间</a>
+								</p>
+							</li>
+							<li>
+								<p><strong>关于我们</strong></p>
+								<p>
+									<a href="help.html" target="_blank">关于唯美美妆</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">申请加入唯美美妆</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">商务合作</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">使用条款及法律资料</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">个人隐私和安全保障</a>
+								</p>
+							</li>
+							<li>
+								<p><strong>订单问题</strong></p>
+								<p>
+									<a href="help.html" target="_blank">如何修改订单</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">如何取消订单</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">商品降价如何处理</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">为何订单被关闭</a>
+								</p>
+								<p>
+									<a href="help.html" target="_blank">订单取消成功为何无退款</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="policy clearfix">
+					<div class="wrap">
+						<ul class="clearfix">
+							<li>
+								<a href="help.html" target="_blank" title="关于我们">关于我们</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="友情链接">友情链接</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="商家入驻">商家入驻</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="开放平台">开放平台</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="加入我们">加入我们</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="商务合作">商务合作</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="隐私条例">隐私条例</a>|</li>
+							<li>
+								<a href="help.html" target="_blank" title="使用条款">使用条款</a>
+							</li>
+						</ul>
+						<div class="copyright">
+							<p>Copyright © 2006 - 2016
+								<a href="help.html">南京思芙美网络科技有限公司 VMEI.COM</a> 保留一切权利 商业登记证号 : 62052243-000</p>
+							<p class="paylogo"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".step_radio").on("click", function() {
+				$(this).addClass("selected");
+				$(this).siblings(".step_radio").removeClass("selected")
+			})
+		})
+	</script>
+
+</html>

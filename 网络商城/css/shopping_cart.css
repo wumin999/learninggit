@@ -1,0 +1,475 @@
+@charset "utf-8";
+.cList_box .price span,
+.cList_box .subtotal span,
+.cList_box .state,
+.total_price li,
+.cList_foot span {
+	color: #333;
+}
+
+.shoppingCart {
+	margin: 20px 0 40px;
+}
+
+.schedule {
+	width: 900px;
+	height: 29px;
+	background: url(../img/shopping_steps.png) no-repeat;
+	margin-bottom: 20px;
+}
+
+.schedule li.selected {
+	color: #fff;
+}
+
+.schedule li {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #737d8c;
+	float: left;
+}
+
+.schedule01 {
+	background-position: 0 -60px;
+}
+
+.mycar_hd {
+	margin: 40px auto;
+	width: 900px;
+}
+
+.cList_head {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #eee;
+	background: #fcfcfc;
+	border: solid 1px #f0f0f0;
+}
+
+.cList_head li {
+	text-align: center;
+	position: relative;
+}
+
+.col1 {
+	width: 6%;
+	float: left;
+	text-align: center;
+}
+
+.col2 {
+	width: 48%;
+	float: left;
+	text-align: center;
+}
+
+.col3 {
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+
+.col4 {
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+
+.col5 {
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+
+.col6 {
+	width: 9%;
+	float: left;
+	text-align: center;
+}
+
+.col7 {
+	width: 7%;
+	float: left;
+	text-align: center;
+}
+
+.cList_head li:after {
+	width: 1px;
+	height: 18px;
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 12px;
+	background: #ddd;
+}
+
+.cList_head .col7:after {
+	width: 0;
+}
+
+.cList_head li .selectall {
+	margin-top: 11px;
+	margin-right: 2px;
+}
+
+.cList_box {
+	width: 100%;
+	border-bottom: solid 1px #eee;
+	border: solid 1px #f0f0f0;
+	padding: 13px 0 13px 0;
+}
+
+.cList_box input[type='checkbox'] {
+	margin-top: 20px;
+}
+
+.cList_box .col2 {
+	text-align: left;
+}
+
+.cList_box .name a {
+	width: 468px;
+	font-size: 14px;
+	color: #333;
+	display: block;
+	padding: 10px 0;
+}
+
+.cList_box .name a:hover {
+	color: #d91864;
+}
+
+.pic {
+	display: inline;
+}
+
+.cList_box .col3 s {
+	color: #a49fa5;
+}
+
+.cList_box .price,
+.cList_box .subtotal,
+.cList_box .sum,
+.cList_box .state,
+.cList_box .operation {
+	padding-top: 25px;
+	display: inline-block;
+}
+
+.cList_box .amount_tool .icon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	_display: inline;
+	vertical-align: middle;
+	line-height: 99;
+	overflow: hidden;
+	background: url(../img/icon01.png) no-repeat;
+}
+
+.cList_box .amount_tool .icon-minus {
+	background-position: 0 -52px;
+}
+
+.cList_box .amount_tool .icon-plus {
+	background-position: -18px -52px;
+}
+
+.cList_box .amount_tool .icon-minus:hover {
+	background-position: -36px -52px;
+}
+
+.cList_box .amount_tool .icon-plus:hover {
+	background-position: -54px -52px;
+}
+
+.cList_box .amount_tool input[type="text"] {
+	width: 28px;
+	height: 18px;
+	padding: 2px;
+	border: solid 1px #ccc;
+	text-align: center;
+}
+
+.cList_box .sum {
+	color: #d91864;
+}
+
+.cList_box .operation a {
+	display: block;
+	color: #00a4b3;
+	padding-bottom: 2px;
+}
+
+.cList_box .operation a:hover {
+	color: #d91864;
+	text-decoration: underline;
+}
+
+.cList_box:hover {
+	background-color: #f9f9f9;
+}
+
+.total_price {
+	border: 1px solid #e9e9e9;
+	border-bottom: none;
+	padding: 10px 30px;
+}
+
+.total_price i,
+.cList_foot i {
+	font-style: normal;
+}
+
+.total_price li {
+	height: 26px;
+	line-height: 26px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.total_price .totalItem {
+	font-weight: bold;
+	color: #d91966;
+	padding-right: 3px;
+}
+
+.cList_foot {
+	border: solid 1px #e9e9e9;
+	border-top: none;
+	background-color: #f9f9f9;
+}
+
+.cList_foot .other {
+	width: 1044px;
+	text-align: right;
+	font-size: 16px;
+	padding: 0 20px 0;
+	float: left;
+	line-height: 50px;
+}
+
+.cList_foot .other .total {
+	color: #f22867;
+}
+
+.cList_foot .btns button {
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	border-radius: 0px;
+	font-size: 14px;
+	border: none;
+}
+
+.btn-red {
+	background: #f22867;
+}
+
+.hintBox {
+	padding: 10px 15px;
+	border-radius: 3px;
+	min-width: 200px;
+	max-height: 150px;
+	border: 1px solid #cecece;
+	background: #fff;
+	-webkit-box-shadow: -5px 1px 8px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: -5px 1px 8px rgba(0, 0, 0, 0.15);
+	box-shadow: -5px 1px 8px rgba(0, 0, 0, 0.15);
+	transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	text-align: center;
+	position: fixed;
+	top: 42%;
+	left: 43%;
+	z-index: 1000;
+	display: none;
+}
+
+.hintBox .hint_hd {
+	text-align: left;
+	font-weight: bold;
+}
+
+.hintBox .hint_hd .close {
+	width: 16px;
+	height: 16px;
+	line-height: 16;
+	overflow: hidden;
+	background: url(../img/close.png) no-repeat;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.hintBox .hint_bd {
+	padding: 20px 0;
+	font-size: 14px;
+}
+
+.hintBox .hint_ft a {
+	margin: 0 5px;
+}
+
+.hintBox .hint_ft .btn {
+	margin: auto;
+	padding: 5px 20px 7px 20px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 1;
+	border-radius: 3px;
+	display: inline-block;
+	border: none;
+	position: relative;
+	background: #d91864;
+	cursor: pointer;
+}
+
+.collect_box {
+	position: fixed;
+	top: 50%;
+	left: 40%;
+	z-index: 20;
+	width: 320px;
+	background: #f22867;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	overflow: hidden;
+	display: none;
+	height: 14px;
+	margin-top: -15px;
+	padding: 15px 0;
+	opacity: 0.8;
+}
+
+.footer_box ul,
+li,
+ol,
+p {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer_box a {
+	color: #333;
+}
+
+.footer_box a:focus {
+	outline: none;
+}
+
+.footer_help a:hover {
+	color: #ea1c50;
+}
+
+.footer_box {
+	color: #1c040e;
+	margin-top: 20px;
+	padding-top: 20px;
+	background: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+.common_wrapper,
+.wrap {
+	width: 1186px;
+	margin: 0 auto;
+}
+
+.footer_help {
+	width: 1200px;
+	margin-bottom: 20px;
+	display: inline-block;
+	padding-left: 0;
+}
+
+.footer_help .dilan_logo {
+	width: 102px;
+	height: 54px;
+	line-height: 54;
+	overflow: hidden;
+	background: url("../img/dilan-logo.png") no-repeat;
+	float: left;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.footer_help ul {
+	background: url("../img/addorder.png") no-repeat;
+	display: inline-block;
+}
+
+.footer_help li {
+	width: 156px;
+	float: left;
+	padding: 5px 0 0 45px;
+	display: inline-block;
+}
+
+.footer_help li p {
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.policy {
+	background: #f9f9f9;
+	border-top: 1px solid #e9e8e8;
+	padding: 0 0 12px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.policy li {
+	font-size: 14px;
+	color: #1c040e;
+	display: inline;
+}
+
+.policy li a {
+	display: inline-block;
+	color: #1c040e;
+	padding: 0 20px;
+	font-size: 14px;
+	letter-spacing: 0px;
+	vertical-align: top;
+}
+
+.copyright {
+	color: #9e9a9c;
+	position: relative;
+	overflow: hidden;
+	line-height: 18px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.copyright p {
+	line-height: 23px;
+}
+
+.copyright a {
+	color: #9e9a9c;
+}
+
+.paylogo {
+	text-align: center;
+	margin-top: 10px;
+	height: 25px;
+	background: url("../img/paylogo.png") no-repeat center;
+}

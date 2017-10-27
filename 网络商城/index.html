@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+				<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/magic.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/hoverdir.css" />
+
+		<script src="font/iconfont.js"></script>
+		<script src="js/modernizr.custom.97074.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+			
+			@font-face {
+				font-family: 'iconfont';
+				src: url('font/iconfont.eot');
+				src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfont') format('svg');
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.head_top {
+				height: 36px;
+				font-size: 12px;
+				line-height: 36px;
+				color: #a9a5a7;
+				background: #f9f9f9;
+			}
+			
+			.head_top li {
+				padding: 0 5px;
+			}
+			
+			.head_top li a {
+				color: #a9a5a7;
+				text-decoration: none;
+			}
+			
+			.head_top li a:hover {
+				color: #ea1c50;
+			}
+			
+			.app a img {
+				width: 8px;
+				height: 15px;
+				position: absolute;
+				top: 10px;
+				left: -10px;
+			}
+			
+			.app_phone {
+				position: absolute;
+				z-index: 99;
+				margin-left: 1px;
+				top: 36px;
+				left: 0;
+				display: none;
+				background: url(img/app_qrcode.png) no-repeat;
+				background-size: 76px 76px;
+				background-position: 2px;
+				width: 80px;
+				height: 80px;
+				border: 1px solid #CDCDCD;
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+			}
+			
+			.app_arrow {
+				background: url(img/app_arrow.png) no-repeat scroll center center transparent;
+				height: 8px;
+				width: 82px;
+				position: absolute;
+				top: -7px;
+			}
+			
+			.head {
+				background-color: #FFFFFF;
+				padding-top: 12px;
+			}
+			
+			.logo {
+				width: 420px;
+				padding-top: 13px;
+			}
+			
+			.l_name {
+				color: #ea1c50;
+				font-size: 30px;
+			}
+			
+			.logo .l_website {
+				font-family: arial, verdana, sans-serif;
+				color: #000;
+				font-size: 30px;
+			}
+			
+			.search .txt,
+			.search .searchBtn,
+			.search .search-table {
+				display: inline-block;
+				vertical-align: top;
+				float: left
+			}
+			
+			.search {
+				margin: 15px auto;
+				z-index: 6;
+				position: relative;
+				width: 430px;
+			}
+			
+			.search-table {
+				float: left;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+				z-index: 11;
+			}
+			
+			.search-table .cur {
+				float: left;
+				height: 34px;
+				line-height: 34px;
+				border-right: 0;
+				border-radius: 2px 0px 0px 2px;
+				padding: 0 25px 0 13px;
+			}
+			
+			.search form {
+				width: 100%;
+				float: left;
+			}
+			
+			.ser_all .cur {
+				padding: 0px 20px;
+			}
+			
+			.ser_all .search_icon {
+				background: url(img/all.png);
+				padding: 0;
+				width: 14px;
+				height: 34px;
+			}
+			
+			.ser_all:hover .search_icon {
+				background: url(img/all_hover.png) no-repeat scroll center top rgba(0, 0, 0, 0);
+				border-right: 0;
+			}
+			
+			.ser_all:hover {
+				background: #ea1c50;
+				color: #fff;
+				border-radius: 2px 0px 0px 2px;
+				float: left;
+				float: left;
+				height: 34px;
+				line-height: 34px;
+				border: 1px solid #ea1c50;
+			}
+			
+			.ser_all {
+				border: 1px solid #dad7d7;
+				border-radius: 2px 0px 0px 2px;
+			}
+			
+			.search-table .list {
+				width: 124px;
+				position: absolute;
+				top: 35px;
+				margin-left: -1px;
+				left: 0;
+				background: #fff;
+				border: 1px solid #d6d2d3;
+				border-top: none;
+				z-index: 99;
+				padding: 10px;
+				display: none;
+			}
+			
+			.search-table .list li {
+				height: 28px;
+				line-height: 28px;
+				float: left;
+				text-align: left
+			}
+			
+			.search-table .list li a {
+				padding-left: 10px;
+				display: inline-block;
+				width: 114px;
+			}
+			
+			.search-table .list li a:hover {
+				background: #f5f5f5;
+				color: #d91966
+			}
+			
+			.search .txt input {
+				background: #fff;
+				border: 1px solid #dad7d7;
+				border-right: 0;
+				border-left: 0;
+				color: #333;
+				font-size: 14px;
+				padding: 6px 7px;
+				height: 22px;
+				line-height: 18px;
+				width: 288px;
+				outline: 0;
+				vertical-align: top;
+				line-height: 20px;
+			}
+			
+			.search .searchBtn {
+				background: none;
+				padding: 0;
+				position: relative;
+			}
+			
+			.search .searchBtn input {
+				border-radius: 0px 2px 2px 0px;
+				overflow: hidden;
+				width: 35px;
+				height: 36px;
+				line-height: 36px;
+				background: url(img/serach.png) no-repeat;
+				border: 1px solid #dad7d7;
+				border-left: 0;
+			}
+			
+			.search .searchBtn input:hover {
+				background: url(img/serach_hover.png) no-repeat;
+				border: 1px solid #ea1c50;
+			}
+			
+			.top_search {
+				font-size: 12px;
+				height: 1.5em;
+				padding: 8px 0 0 3px;
+				overflow: hidden;
+				white-space: nowrap;
+				word-wrap: normal;
+				text-overflow: ellipsis;
+				color: #1c040e;
+			}
+			
+			.top_search a {
+				margin-right: 5px;
+			}
+			
+			.shop {
+				border-radius: 3px;
+				height: 34px;
+				margin-top: 15px;
+				background: none repeat scroll 0px 0px #FFF;
+				line-height: 34px;
+			}
+			
+			.shop-bag {
+				padding: 0px 20px 0 40px;
+				line-height: 34px;
+				display: block;
+				border: 1px solid #ccc;
+				z-index: 1;
+				background: #fff;
+				border-radius: 2px;
+			}
+			
+			.shop span {
+				line-height: 34px;
+				float: left;
+				padding-right: 2px;
+			}
+			
+			.shop span img {
+				position: absolute;
+				top: 7px;
+				left: 16px;
+			}
+			
+			.gwc-cont {
+				border-radius: 2px 0px 2px 2px;
+				display: none;
+				border: 1px solid #CCC;
+				width: 270px;
+				padding: 10px 20px;
+				right: 0px;
+				background: #FFF;
+				position: absolute;
+				top: 35px;
+			}
+			
+			.gwc-cont .mycart_popup {
+				position: relative;
+				width: 100%;
+				border: 0px;
+				left: 0;
+				top: 0;
+				display: inline;
+				padding: 0;
+			}
+			
+			.gwc-cont .mycart_popup .relt a {
+				text-decoration: none;
+				line-height: 22px;
+				height: 22px;
+			}
+			
+			.shop>font img {
+				margin-left: 8px;
+				margin-top: -3px;
+			}
+			
+			.hover_on .gwc-cont {
+				display: block;
+			}
+			
+			.hover_on .shop-bag {
+				border-bottom: 1px solid #fff;
+			}
+			
+			.bag_tips {
+				background: url(img/tips_down.png) center no-repeat;
+				width: 12px;
+				height: 34px;
+				float: right;
+				margin-left: 6px;
+				-webkit-transition: all .2s ease;
+				-moz-transition: all .2s ease;
+				-o-transition: all .2s ease;
+				-ms-transition: all .2s ease;
+				transition: all .2s ease;
+			}
+			
+			.hover_on .bag_tips {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+			
+			.hNav_box {
+				width: 100%;
+				font-size: 14px;
+				color: #000;
+				height: 44px;
+				line-height: 44px;
+				background: #000;
+				box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+			}
+			
+			.hNav a.title {
+				width: 100px;
+				text-align: center;
+				color: #FFFFFF;
+				font-size: 16px;
+				margin: 0 30px;
+				display: block;
+			}
+			
+			.hNav li a:hover {
+				background-color: #EA1C50;
+			}
+			
+			.hNav li dl {
+				width: 100px;
+				background-color: #232223;
+				position: absolute;
+				left: 0;
+				text-align: center;
+				font-size: 14px;
+				display: none;
+				z-index: 2;
+				margin: 0 30px;
+			}
+			
+			.hNav li dl dd a {
+				display: block;
+				padding: 5px 0;
+				font-size: 16px;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<div class="head_top">
+		<ul class="container clearfix">
+			<li class="fl">hi~唯美美妆欢迎爱美的你~！</li>
+			<li class="fl">
+				<a href="log-resiger.html">马上登录</a>
+			</li>
+			<li class="line fl">|</li>
+			<li class="fl">
+				<a href="log-resiger.html">立即注册</a>
+			</li>
+			<li class="fr">
+				<a href="welcome.html">个人中心</a>
+			</li>
+			<li class="line fr">|</li>
+			<li class="fr">
+				<a href="help.html">帮助中心</a>
+			</li>
+			<li class="line fr">|</li>
+			<li class="fr">
+				<a href="help.html">品牌入驻</a>
+			</li>
+			<li class="line fr">|</li>
+			<li class="fr">
+				<a href="help.html">开放平台</a>
+			</li>
+			<li class="line fr">|</li>
+			<li class="fr">
+				<a href="help.html">隐私条款</a>
+			</li>
+			<li class="line fr">|</li>
+			<li class="app fr relative">
+				<a href="#">
+					<img src="img/icon_app.png" /> 手机唯美美妆
+				</a>
+				<div class="app_phone">
+					<span class="app_arrow"></span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--logo&搜索框-->
+	<div class="head">
+		<div class="container clearfix">
+			<!--logo-->
+			<div class="logo fl">
+				<a href="index.html">
+					<span class="l_name">唯美美妆</span>
+					<span class="l_website">VMEI.COM</span>
+				</a>
+			</div>
+			<!--搜索框-->
+			<div class="search fl clearfix">
+				<form class="clearfix" autocomplete="off" action="/products" method="get" id="topSearchBar">
+					<input type="hidden" name="nid" value="">
+					<div class="search-table ser_all fl clearfix">
+						<span class="cur fl">
+                        		<div class="search_icon"></div>
+          					</span>
+						<div class="list">
+							<ul>
+								<li>
+									<a name="all">全部</a>
+								</li>
+								<li>
+									<a name="all">护肤</a>
+								</li>
+								<li>
+									<a name="all">彩妆</a>
+								</li>
+								<li>
+									<a name="all">香水</a>
+								</li>
+								<li>
+									<a name="all">身体护理</a>
+								</li>
+								<li>
+									<a name="all">洗发护发</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<span class="txt fl" style="position: relative;">
+							<input type="text" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" data-default="香水" name="keyword" value="">
+						</span>
+					<span class="searchBtn fl"><input type="submit" value=""></span>
+				</form>
+				<div class="top_search">
+					<a title="" href="ProductList0.html">保湿</a>
+					<a title="" href="ProductList1.html">兰蔻</a>
+					<a title="" href="ProductList2.html">雅诗兰黛</a>
+					<a title="" href="ProductList2.html">控油</a>
+					<a title="" href="ProductList0.html">去角质</a>
+					<a title="" href="ProductList1.html">防晒</a>
+					<a title="" href="ProductList2.html">减肥</a>
+					<a title="" href="ProductList0.html">脱毛</a>
+				</div>
+				<div id="bigAutocompleteContent" class="searchBox"></div>
+			</div>
+			<!--购物车-->
+			<div class="shop fr clearfix relative">
+				<a href="shopping_cart.html" class="shop-bag relative fl">
+					<span><img src="img/gwc.png"></span>
+					<span class="cart_hover">购物袋 (0)</span>
+					<span>：</span>
+					<span class="bag_precie">￥0.00</span>
+					<span class="bag_tips"></span>
+				</a>
+				<div class="gwc-cont">
+					<div class="mycart_popup">
+						<div class="tip">购物车暂无商品<br>快去挑选自己钟爱的商品吧~~</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--导航栏-->
+	<div class="hNav_box">
+		<div class="hNav container">
+			<ul class="nav_title clearfix">
+				<li class="fl">
+					<a href="index.html" class="title">首页</a>
+				</li>
+				<li class="fl relative">
+					<a href="ProductList0.html" class="title">护肤</a>
+					<dl>
+						<dd>
+							<a href="ProductList0.html">卸妆</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">洁面</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">护理</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">面膜</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">面霜</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="fl relative">
+					<a href="ProductList1.html" class="title">彩妆</a>
+					<dl>
+						<dd>
+							<a href="ProductList1.html">粉底</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">隔离</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">遮瑕</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">眉笔</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">眼线</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">美唇</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="fl relative">
+					<a href="ProductList2.html" class="title">香水</a>
+					<dl>
+						<dd>
+							<a href="ProductList2.html">香水EDP</a>
+						</dd>
+						<dd>
+							<a href="ProductList2.html">淡香水EDT</a>
+						</dd>
+						<dd>
+							<a href="ProductList2.html">固体香水</a>
+						</dd>
+						<dd>
+							<a href="ProductList2.html">香体乳</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="fl relative">
+					<a href="ProductList0.html" class="title">身体护理</a>
+					<dl>
+						<dd>
+							<a href="ProductList0.html">沐浴用品</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">身体护理</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">纤维护理</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">手足部护理</a>
+						</dd>
+						<dd>
+							<a href="ProductList0.html">脱毛用品</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="fl relative">
+					<a href="ProductList1.html" class="title">洗发护发</a>
+					<dl>
+						<dd>
+							<a href="ProductList1.html">洗发</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">护发</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">美发用品</a>
+						</dd>
+						<dd>
+							<a href="ProductList1.html">烫发染发</a>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--头部-->
+
+	<!--轮播图-->
+	<div class="focusBox" style="margin:0 auto">
+		<ul class="pic" style="position: relative; width: 100%; height: 500px;">
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none;">
+				<a href="#" target="_blank"><img src="img/slide1.jpg"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: list-item;">
+				<a href="#" target="_blank"><img src="img/slide7.jpg"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none;">
+				<a href="#" target="_blank"><img src="img/slide3.jpg"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none;">
+				<a href="#" target="_blank"><img src="img/slide8.jpg"></a>
+			</li>
+			<li style="position: absolute; width: 100%; left: 0px; top: 0px; display: none;">
+				<a href="#" target="_blank"><img src="img/slide5.jpg"></a>
+			</li>
+		</ul>
+		<a class="prev" href="javascript:void(0)" style="opacity: 0.2; display: none;"></a>
+		<a class="next" href="javascript:void(0)" style="opacity: 0.2; display: none;"></a>
+		<ul class="hd">
+			<li class=""></li>
+			<li class="on"></li>
+			<li class=""></li>
+			<li class=""></li>
+			<li class=""></li>
+		</ul>
+	</div>
+	<!--优惠信息-->
+	<div class="container clearfix">
+		<div class="boxb">
+			<div class="box-content">
+				<div class="box-wrapper">
+					热销商品<span class="nameb">Best Sale</span>
+					<div class="rowb">Buy Now</div>
+				</div>
+			</div>
+			<div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+				<a href="productIntro.html"><img src="img/TB2g0SZaBRRMKJjSZPhXXcZo.jpg" alt="" /></a>
+			</div>
+		</div>
+
+		<div class="boxb">
+			<div class="box-content">
+				<div class="box-wrapper">
+					新品上市<span class="nameb">New Arrivals</span>
+					<div class="rowb">Buy Now</div>
+				</div>
+			</div>
+			<div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+				<a href="productIntro.html"><img src="img/TB27XbYe5GO.eBjSZFEXXcy9VXa_!!.jpg" alt="" /></a>
+			</div>
+		</div>
+
+		<div class="boxb">
+			<div class="box-content">
+				<div class="box-wrapper">
+					独家发售<span class="nameb">Exclusive Sale</span>
+					<div class="rowb">Buy Now</div>
+				</div>
+			</div>
+			<div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+				<a href="productIntro.html"><img  src="img/TB2vCura8USMeJjSszbXXberFX.jpg" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<!--热销商品-->
+	<div class="hot-goods container">
+		<header class="box index-model-title"></header>
+		<ul class="list box clearfix">
+			<li class="good trans3 fl">
+				<a href="Hera 1.html" target="_blank">
+					<img src="img/2611_G_1502872680697.jpg">
+				</a>
+				<div class="footer">
+					<a href="Hera 1.html" target="_blank">
+						<div class="title">Dior/迪奥 变色唇膏</div>
+					</a>
+					<div class="b clear-both">
+						<div class="price">
+							<span class="shop-price">229</span>
+							<span class="market-price">300</span>
+							<a class="buy-btn" href="Hera 1.html" target="_blank">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="good trans3 fl">
+				<a href="Hera 2.html" target="_blank">
+					<img src="img/2584_G_1502163329237.jpg">
+				</a>
+				<div class="footer">
+					<a href="Hera 2.html" target="_blank">
+						<div class="title">ZFC 红品牌-流光绘色眼线水笔</div>
+					</a>
+					<div class="b clear-both">
+						<div class="price">
+							<span class="shop-price">122</span>
+							<span class="market-price">139</span>
+							<a class="buy-btn" href="Hera 2.html" target="_blank">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="good trans3 fl">
+				<a href="Hera 1.html" target="_blank">
+					<img src="img/2593_G_1502345497077.jpg">
+				</a>
+				<div class="footer">
+					<a href="Hera 1.html" target="_blank">
+						<div class="title">CK/卡尔文克雷恩 “因为你”男用淡喷式香水 50ml</div>
+					</a>
+					<div class="b clear-both">
+						<div class="price">
+							<span class="shop-price">378</span>
+							<span class="market-price">430</span>
+							<a class="buy-btn" href="Hera 1.html" target="_blank">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="good trans3 fl">
+				<a href="Hera 2.html" target="_blank">
+					<img src="img/1733_G_1490583710510.jpg">
+				</a>
+				<div class="footer">
+					<a href="Hera 2.html" target="_blank">
+						<div class="title">Ryoe/吕 爱茉莉红吕洗发水400ml + 护发素 180ml</div>
+					</a>
+					<div class="b clear-both">
+						<div class="price">
+							<span class="shop-price">139</span>
+							<span class="market-price">198</span>
+							<a class="buy-btn" href="Hera 2.html" target="_blank">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--品牌活动-->
+	<div class="parents container">
+		<header class="box index-model-title"></header>
+		<ul class="brand_pre clearfix">
+			<li class="sides fl">
+				<a  href="ProductList0.html" class="side" style="width:240px;height: 290px;">
+					<img src="img/2.jpg" style="width:240px;height: 290px;" />
+				</a>
+				<a style="display: block;" href="ProductList1.html" class="side" style="width:240px;height: 150px;">
+					<img src="img/8.jpg" style="width:240px;height: 150px;" />
+				</a>
+			</li>
+			<li class="sides middle fl">
+				<a href="ProductList2.html" class="side" style="width:629px;height: 452px;">
+					<img src="img/1.jpg" style="width:629px;height: 452px;" />
+				</a>
+			</li>
+			<li class="sides fl">
+				<a href="ProductList0.html" class="side" style="width:240px;height: 290px;">
+					<img src="img/4.jpg" style="width:240px;height: 290px;" />
+				</a>
+				<a style="display: block;" href="ProductList1.html" class="side" style="width:240px;height: 150px;">
+					<img src="img/5.jpg" style="width:240px;height: 150px;" />
+				</a>
+			</li>
+		</ul>
+		<ul class="brand_pre clearfix">
+			<li class="sides fl">
+				<a href="ProductList2.html" class="side" style="width:240px;height: 290px;">
+					<img src="img/7.jpg" style="width:240px;height: 290px;" />
+				</a>
+				<a style="display: block;" href="ProductList0.html" class="side" style="width:240px;height: 150px;">
+					<img src="img/10.jpg" style="width:240px;height: 150px;" />
+				</a>
+			</li>
+			<li class="sides fl">
+				<a href="ProductList1.html" class="side" style="width:629px;height: 452px;">
+					<img src="img/6.jpg" style="width:629px;height: 452px;" />
+				</a>
+			</li>
+			<li class="sides fl">
+				<a href="ProductList2.html" class="side" style="width:240px;height: 290px;">
+					<img src="img/9.jpg" style="width:240px;height: 290px;" />
+				</a>
+				<a style="display: block;" href="ProductList0.html" class="side" style="width:240px;height: 150px;">
+					<img src="img/11.jpg" style="width:240px;height: 150px;" />
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--商品推荐-->
+	<div class="recomment box container">
+		<header class="box index-model-title t1"></header>
+		<div class="r-model">
+			<div class="list clearfix">
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 1.html">
+						<img src="img/2299_G_1493790057330.jpg">
+						<div class="good-name">Laneige/兰芝 水衡清盈精华水 200ml </div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">193</span><span class="market-price">218</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 2.html" class="ml-20">
+						<img src="img/339_G_1488173142667.jpg">
+						<div class="good-name">Clinique/倩碧 保湿洁肤水1号(极干性到干性) 200ml</div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">158</span><span class="market-price">190</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 1.html" class="ml-20">
+						<img src="img/2237_G_1489561276310.jpg">
+						<div class="good-name">Estee Lauder/雅诗兰黛 小棕瓶肌透修护眼部精华霜 15ML</div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">459</span><span class="market-price">490</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 2.html" class="ml-20">
+						<img src="img/2478_G_1497940816429.jpg">
+						<div class="good-name">Dr.Ci:Labo/城野医生 毛孔控油收缩收敛保湿啫喱 50ml</div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">179</span><span class="market-price">209</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 1.html">
+						<img src="img/2233_G_1489555890412.jpg">
+						<div class="good-name">ESTEE LAUDER/雅诗兰黛 肌初赋活原生液 150ml </div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">760</span><span class="market-price">898</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 2.html" class="ml-20">
+						<img src="img/2209_G_1489138187401.jpg">
+						<div class="good-name">LA MER/海蓝之谜 精华乳霜 舒缓修护 30ml</div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">1445</span><span class="market-price">1450</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 1.html" class="ml-20">
+						<img src="img/2017_G_1488765733543.jpg">
+						<div class="good-name">Sulwhasoo/雪花秀 睡眠面膜 120ml</div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">269</span><span class="market-price">319</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="good trans3 fl">
+					<a target="_blank" href="Hera 2.html" class="ml-20">
+						<img src="img/1032_G_1492065783783.jpg">
+						<div class="good-name">ANESSA/安热沙 防晒露SPF30 PA+++ 60ml</div>
+						<div class="footer clearfix">
+							<div class="price">
+								<span class="shop-price">238</span><span class="market-price">369</span>
+							</div>
+							<div class="buy-btn">立即购买</div>
+						</div>
+					</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--品牌墙-->
+	<div class="brand container box">
+		<header class="box index-model-title"></header>
+		<ul class="brands clearfix">
+			<div class="left">
+				<a target="_blank" href="ProductList0.html">MORE</a>
+			</div>
+			<ul class="list clearfix" id="da-thumbs">
+				<li>
+					<a target="_blank" href="ProductList1.html"><img src="img/1452041734022016893.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList2.html"><img src="img/1453929526914742050.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+
+				</li>
+				<li>
+					<a target="_blank" href="ProductList0.html"><img src="img/1452041655111247829.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList1.html"><img src="img/1452041771753315766.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList2.html"><img src="img/1453929590517842567.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList0.html"><img src="img/1453929553635548935.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList1.html"><img src="img/1452042001941877305.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList2.html"><img src="img/1452042852187756574.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList0.html"><img src="img/1452041796985529741.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList1.html"><img src="img/1452042831615196856.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList2.html"><img src="img/1452042104604769141.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList0.html"><img src="img/1453936567694798169.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList1.html"><img src="img/1452041619170635091.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList2.html"><img src="img/1453929497873748663.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList0.html"><img src="img/1452042820869252502.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="ProductList1.html"><img src="img/1452042016360174008.jpg">
+						<div><span><svg class="icon xihuan" aria-hidden="true">
+  <use xlink:href="#icon-xihuan"></use>
+</svg></span></div>
+					</a>
+				</li>
+			</ul>
+			<div class="right">
+				<a target="_blank" href="ProductList2.html">MORE</a>
+			</div>
+	</div>
+	</div>
+	<!--尾部-->
+	<div class="lastfooter">
+		<iframe src="footer.html" frameborder="0" width="100%" height="341px"></iframe>
+	</div>
+	<div class="top">
+	</div>
+
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//			$(".header").load("header.html");
+			//			$(".lastfooter").load("footer.html");
+			$(".focusBox").hover(function() {
+				$(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
+			}, function() {
+				$(this).find(".prev,.next").fadeOut()
+			});
+			$(".focusBox").slide({
+				mainCell: ".pic",
+				//				effect: "fold",
+				autoPlay: true,
+				delayTime: 600,
+				trigger: "click"
+			});
+			$(".app").hover(function() {
+				$(this).find(".app_phone ").stop(true).fadeIn();
+			}, function() {
+				$(this).find(".app_phone ").stop(true).fadeOut();
+			})
+			var flag = true;
+			$(".ser_all").click(function() {
+				if(flag) {
+					flag = false;
+					$(this).find(".list").css("display", "block");
+				} else {
+					flag = true;
+					$(this).find(".list").css("display", "none");
+				}
+			});
+			$(".shop-bag").hover(function() {
+				$(this).parent(".shop").addClass("hover_on");
+			}, function() {
+				$(this).parent(".shop").removeClass("hover_on");
+			});
+			$(".hNav li").hover(function() {
+				$(this).find("dl").stop(true).slideDown();
+			}, function() {
+				$(this).find("dl").stop(true).slideUp();
+			});
+			//返回顶部
+			function gotoTop(min_height) {
+				//预定义返回顶部的html代码，它的css样式默认为不显示
+				var gotoTop_html = '<div id="gotoTop">返回顶部</div>';
+				//将返回顶部的html代码插入页面上id为page的元素的末尾 
+				$(".top").append(gotoTop_html);
+				$("#gotoTop").click( //定义返回顶部点击向上滚动的动画
+					function() {
+						$('html,body').animate({
+							scrollTop: 0
+						}, 500);
+					}).hover( //为返回顶部增加鼠标进入的反馈效果，用添加删除css类实现
+					function() {
+						$(this).addClass("hover");
+					},
+					function() {
+						$(this).removeClass("hover");
+					});
+				//获取页面的最小高度，无传入值则默认为600像素
+				min_height ? min_height = min_height : min_height = 600;
+				//为窗口的scroll事件绑定处理函数
+				$(window).scroll(function() {
+					//获取窗口的滚动条的垂直位置
+					var s = $(window).scrollTop();
+					//当窗口的滚动条的垂直位置大于页面的最小高度时，让返回顶部元素渐现，否则渐隐
+					if(s > min_height) {
+						$("#gotoTop").fadeIn(100);
+					} else {
+						$("#gotoTop").fadeOut(200);
+					};
+				});
+			};
+			gotoTop();
+			$(".brand_pre .sides .side").hover(function() {
+				$(this).siblings(".side").find("img").add($(this).parent(".sides").siblings(".sides").find("img")).stop(true).animate({
+					opacity: 0.4
+				})
+			}, function() {
+				$(this).siblings(".side").find("img").add($(this).parent(".sides").siblings(".sides").find("img")).stop(true).animate({
+					opacity: 1
+				})
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		jQuery(".picScroll").slide({
+			mainCell: "ul",
+			effect: "leftMarquee",
+			vis: 5,
+			autoPlay: true,
+			interTime: 50,
+			switchLoad: "_src"
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//手机唯美美妆hover
+			$(".app").hover(function() {
+				$(this).find(".app_phone ").stop(true).fadeIn();
+			}, function() {
+				$(this).find(".app_phone ").stop(true).fadeOut();
+			})
+			//搜索框左边click
+			var flag = true;
+			$(".ser_all").click(function() {
+				if(flag) {
+					flag = false;
+					$(this).find(".list").css("display", "block");
+				} else {
+					flag = true;
+					$(this).find(".list").css("display", "none");
+				}
+			});
+			$(".list a").click(function() {
+				$(".search-table .cur").text($(this).text());
+			});
+			$(".top_search a").click(function() {
+				$(".search .txt input").val($(this).text());
+			})
+			//购物车hover
+			$(".shop-bag").hover(function() {
+				$(this).parent(".shop").addClass("hover_on");
+			}, function() {
+				$(this).parent(".shop").removeClass("hover_on");
+			});
+			$(".gwc-cont").hover(function() {
+				$(this).parent(".shop").addClass("hover_on");
+			}, function() {
+				$(this).parent(".shop").removeClass("hover_on");
+			});
+			//导航栏hover
+			$(".hNav li").hover(function() {
+				$(this).find("dl").stop(true).slideDown();
+			}, function() {
+				$(this).find("dl").stop(true).slideUp();
+			});
+		})
+	</script>
+
+	<script src="js/jquery.hoverdir.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(' #da-thumbs > li ').each(function() {
+				$(this).hoverdir();
+			});
+		});
+	</script>
+
+</html>

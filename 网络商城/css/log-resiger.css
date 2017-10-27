@@ -1,0 +1,490 @@
+@charset "utf-8";
+.Validform_checktip {
+	margin-left: 8px;
+	line-height: 20px;
+	overflow: hidden;
+	color: #999;
+	font-size: 12px;
+}
+
+.Validform_right {
+	color: #71b83d;
+	position: absolute;
+	top: 47px;
+	left: 45px;
+	font-size: 12px;
+	display: inline-block;
+	float: left;
+	line-height: 36px;
+	margin-left: 0px;
+	height: 28px;
+	white-space: nowrap;
+	display: none;
+}
+
+.Validform_wrong {
+	color: #d91864;
+	white-space: nowrap;
+}
+.register_wrong{
+	position: absolute;
+	top: 47px;
+	left: 45px;
+	font-size: 12px;
+	display: inline-block;
+	float: left;
+	line-height: 36px;
+	margin-left: 0px;
+	height: 28px;
+}
+.log_wrong{
+	position: absolute;
+	font-size: 12px;
+	top: 45px;
+	left: 0px;
+}
+
+
+.Validform_loading {
+	padding-left: 20px;
+}
+
+.Validform_error {
+	background-color: #ffe7e7;
+}
+
+#Validform_msg {
+	color: #7d8289;
+	font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+	width: 280px;
+	-webkit-box-shadow: 2px 2px 3px #aaa;
+	-moz-box-shadow: 2px 2px 3px #aaa;
+	background: #fff;
+	position: absolute;
+	top: 0px;
+	right: 50px;
+	z-index: 99999;
+	display: none;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+#Validform_msg .iframe {
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	z-index: -1;
+}
+
+#Validform_msg .Validform_title {
+	line-height: 25px;
+	height: 25px;
+	text-align: left;
+	font-weight: bold;
+	padding: 0 8px;
+	color: #fff;
+	position: relative;
+	background-color: #000;
+}
+
+#Validform_msg a.Validform_close:link,
+#Validform_msg a.Validform_close:visited {
+	line-height: 22px;
+	position: absolute;
+	right: 8px;
+	top: 0px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#Validform_msg a.Validform_close:hover {
+	color: #cc0;
+}
+
+#Validform_msg .Validform_info {
+	padding: 8px;
+	border: 1px solid #000;
+	border-top: none;
+	text-align: left;
+}
+
+.trans3 {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.login_panel {
+	width: 1200px;
+	height: 710px;
+	margin: 50px auto;
+	display: block;
+	border: 1px solid #ddd;
+	position: relative;
+}
+
+.module_left {
+	width: 60%;
+	height: 100%;
+	position: relative;
+}
+
+.register {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 500px;
+	margin: 30px auto;
+	left: 0;
+	opacity: 1;
+	background-color: white;
+	display: block;
+}
+
+.register-table {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	padding: 20px 0px;
+	float: left;
+	display: block;
+	width: 420px;
+	margin-left: 60px;
+}
+
+.register-table td {
+	padding: 15px 45px;
+	position: relative;
+	clear: both;
+	vertical-align: inherit;
+	display: table-cell;
+}
+
+.register-table h2 {
+	line-height: 26px;
+	font-size: 18px;
+	color: #d91966;
+}
+
+.search-table {
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.cur {
+	width: 46px;
+	border: 1px solid #cdcdcd;
+	text-align: center;
+	margin-right: 10px;
+	border-radius: 3px;
+	padding: 0px 20px 0px 10px !important;
+	float: left;
+}
+
+.list {
+	width: 309px;
+	border: 1px solid #cdcdcd;
+	top: 37px;
+	position: absolute;
+	z-index: 99;
+	padding: 10px;
+	left: 0;
+	display: none;
+	background-color: white;
+}
+
+.arrow {
+	display: inline-block;
+	border-style: solid dashed;
+	border-width: 5px 5px 0;
+	margin: -2px 0 0 5px;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	vertical-align: middle;
+	border-color: #d6d2d3 transparent;
+	position: absolute;
+	top: 18px;
+	right: 18px;
+}
+
+.search-table:hover .arrow {
+	border-top-color: #7f7e80;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.search-table ul li {
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	text-align: left;
+}
+
+.search-table ul li a {
+	padding-left: 10px;
+	display: inline-block;
+	width: 92px;
+}
+
+.registerName {
+	width: 228px;
+}
+
+.imageCode {
+	margin-right: 18px;
+	width: 100px;
+}
+
+.register-table td input {
+	float: left;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 6px;
+	overflow: hidden;
+	height: 24px;
+	line-height: 24px;
+}
+
+.code-img {
+	display: block;
+	float: left;
+	border: 1px solid #dedede;
+}
+
+.code-refresh {
+	float: left;
+	color: #09F;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 6px 0 0 15px;
+	height: 25px;
+	width: 30px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+td input.recodeBtn {
+	border: medium none;
+	height: 38px;
+	line-height: 28px;
+	width: 198px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.def_size {
+	width: 317px;
+}
+
+.register-table td input.btn-agree {
+	width: 330px;
+	font-size: 18px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	border: none;
+	height: 36px;
+	line-height: 36px;
+	margin-right: 35px;
+	overflow: visible;
+	text-align: center;
+	padding: 0 10px;
+	background: #d91864;
+	color: white;
+}
+
+.register-table td input.checkBox {
+	margin-right: 5px;
+}
+
+a {
+	color: #333;
+}
+
+.module_right {
+	width: 40%;
+	height: 100%;
+	border-left: 1px solid #ddd;
+	margin-left: -1px;
+	background: #eee;
+	position: absolute;
+	right: 0;
+	z-index: 20;
+}
+
+.mod-link {
+	margin: 20px auto;
+	width: 225px;
+}
+
+.row:first-child {
+	border-bottom: 1px dotted #333;
+}
+
+.row {
+	width: 225px;
+	padding: 30px 0;
+}
+
+.row p {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+}
+
+.go_reg,
+.go_login,
+.bind_taobao {
+	width: 224px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: #707070;
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	display: inline-block;
+	background: #dcdcdc;
+	background-image: -webkit-linear-gradient(#f9f9f9, #dcdcdc);
+	outline: none;
+	cursor: pointer;
+}
+
+.log {
+	width: 100%;
+	display: block;
+	margin: 0;
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: white
+}
+
+.log_form {
+	margin: 30px 0px 30px 60px;
+	padding: 15px 45px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	width: 430px;
+	box-sizing: border-box;
+}
+
+.log_form h2 {
+	color: #d91864;
+	font-size: 18px;
+}
+
+.log_form dd {
+	margin: 15px 0px;
+	float: left;
+	position: relative;
+}
+
+.log_form input.user {
+	width: 328px;
+	background-position: 5px 2px;
+	padding: 7px 5px;
+}
+
+.log_form input.pass {
+	width: 328px;
+	background-position: 5px 2px;
+	padding: 7px 5px;
+}
+
+.log_form input {
+	border: 1px solid #e9e9e9;
+	border-radius: 3px;
+	font-size: 14px;
+	width: 350px;
+	color: #333;
+	height: 24px;
+	line-height: 24px;
+}
+
+.log_form dd input.login_btn {
+	width: 340px;
+	font-size: 18px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	border: none;
+	height: 36px;
+	line-height: 36px;
+	margin-right: 35px;
+	overflow: visible;
+	text-align: center;
+	padding: 0 10px;
+	background: #d91864;
+	color: white;
+}
+
+.options {
+	float: left;
+	padding-top: 10px;
+}
+
+.options label {
+	line-height: 32px;
+	padding-top: 3px;
+	margin-bottom: 5px;
+}
+
+.options span {
+	font-size: 14px;
+}
+
+.login .options span .remember {
+	margin-top: -2px;
+	width: auto;
+	margin-right: 5px;
+	height: 13px;
+	font-size: 14px;
+	border: 1px solid #e9e9e9;
+}
+
+.options span a {
+	margin-top: 9px;
+	margin-left: 10px;
+}
+
+.options .dynamic {
+	margin-left: 70px;
+	font-size: 14px;
+	color: #d91966;
+}
+
+
+/*验证码code*/
+
+#code {
+	width: 150px;
+	height: 35px;
+	font-size: 20px;
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	border: 0;
+	letter-spacing: 10px;
+	color: blue;
+	outline: 0;
+	cursor: pointer;
+}
+
+#check {
+	margin-left: 10px;
+	width: 50px;
+	height: 30px;
+	padding-top: 5px;
+	font-size: 14px;
+	border: 0;
+	color: blue;
+}

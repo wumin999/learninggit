@@ -1,0 +1,178 @@
+@charset "utf-8";
+body{
+	background-color: #FFFFFF !important;
+}
+.com_left {
+    float: left;
+    width: 220px;
+    padding-top: 10px;
+}
+.help_sidebar {
+    float: left;
+    width: 218px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #F3F3F3;
+    background: #fff;
+    padding-top: 10px;
+}
+.help_sidebar .title {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.help_nav {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.help_self_service h4, .help_contact h4, .help_faq h4, .help_search h4, .help_nav h4 {
+    background: #d91966;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 22px;
+}
+.help_nav ul {
+    padding: 5px 0 5px 23px;
+}
+.help_nav li {
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    border-left: 2px solid #C7CABF;
+}
+.help_nav li a {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 0 0 30px;
+    position: absolute;
+    top: 0;
+    left: -6px;
+}
+.help_nav li a:hover {
+    color: #ff3378;
+    font-weight: 700;
+    background: url(../img/icon01.png) no-repeat -170px -240px;
+}
+.com_right {
+    float: right;
+    width: 942px;
+    min-height: 300px;
+}
+.crumb {
+    color: #737d8c;
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding-top: 15px;
+    height: 20px;
+}
+.crumb li {
+    float: left;
+    line-height: 20px;
+}
+.crumb .home a {
+    display: block;
+    float: left;
+    background: url(../img/icon01.png) no-repeat -88px 0;
+    height: 16px;
+    width: 16px;
+}
+.crumb li a {
+    display: block;
+    color: #4a4439;
+    font-weight: normal;
+}
+.crumb .step_arrow {
+    display: block;
+    float: left;
+    background: url(../img/icon01.png) no-repeat -88px -17px;
+    margin-top: 3px;
+    margin-left: 8px;
+    height: 16px;
+    width: 11px;
+    overflow: hidden;
+}
+.help_content {
+    min-height: 955px;
+}
+.help_content {
+    float: right;
+    overflow: hidden;
+    padding: 12px 20px 20px 20px;
+    width: 900px;
+    border: 1px solid #e3e3df;
+    background: #fff;
+}
+.help_content h3 {
+    height: 36px;
+    line-height: 36px;
+    background: #eee;
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.help_index .procedures {
+    padding: 20px 0;
+    display: inline-block;
+}
+.help_index .procedures li.steps {
+    width: 124px;
+    background: #008c99;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+.help_index .procedures li {
+    height: 63px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.help_index .procedures li i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #008c99;
+    border-radius: 100px;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+}
+.help_index .procedures li p {
+    line-height: 26px;
+}
+.help_index .procedures li.arrow {
+    width: 44px;
+    background: url("../img/bg_procedures.png") no-repeat 0 35px;
+}
+.help_index .procedures li {
+    height: 63px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.help_content h3 {
+    height: 36px;
+    line-height: 36px;
+    background: #eee;
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.help_index p span {
+    margin: 20px 0 6px 10px;
+    display: inline-block;
+}
+.help_index p a {
+    margin: 0 10px;
+    display: inline-block;
+    line-height: 26px;
+    color: #d91966;
+}

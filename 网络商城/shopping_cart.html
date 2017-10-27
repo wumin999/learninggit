@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopping_cart.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="head_top">
+			<ul class="container clearfix">
+				<li class="fl">hi~唯美美妆欢迎爱美的你~！</li>
+				<li class="fl">
+					<a href="log.html">马上登录</a>
+				</li>
+				<li class="line fl">|</li>
+				<li class="fl">
+					<a href="resiger.html">立即注册</a>
+				</li>
+				<li class="fr">
+					<a href="welcome.html">个人中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">帮助中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">品牌入驻</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">开放平台</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">隐私条款</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="app fr relative">
+					<a href="#">
+						<img src="img/icon_app.png" /> 手机唯美美妆
+					</a>
+					<div class="app_phone">
+						<span class="app_arrow"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--logo&搜索框-->
+		<div class="head">
+			<div class="container clearfix">
+				<!--logo-->
+				<div class="logo fl">
+					<a href="index.html">
+						<span class="l_name">唯美美妆</span>
+						<span class="l_website">VMEI.COM</span>
+					</a>
+				</div>
+				<!--搜索框-->
+				<div class="search fl clearfix">
+					<form class="clearfix" autocomplete="off" action="/products" method="get" id="topSearchBar">
+						<input type="hidden" name="nid" value="">
+						<div class="search-table ser_all fl clearfix">
+							<span class="cur fl">
+                        		<div class="search_icon"></div>
+          					</span>
+							<div class="list">
+								<ul>
+									<li>
+										<a name="all">全部</a>
+									</li>
+									<li>
+										<a name="all">护肤</a>
+									</li>
+									<li>
+										<a name="all">彩妆</a>
+									</li>
+									<li>
+										<a name="all">香水</a>
+									</li>
+									<li>
+										<a name="all">身体护理</a>
+									</li>
+									<li>
+										<a name="all">洗发护发</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<span class="txt fl" style="position: relative;">
+							<input type="text" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" data-default="香水" name="keyword" value="">
+						</span>
+						<span class="searchBtn fl"><input type="submit" value=""></span>
+					</form>
+					<div class="top_search">
+						<a title="" href="ProductList0.html">保湿</a>
+						<a title="" href="ProductList1.html">兰蔻</a>
+						<a title="" href="ProductList2.html">雅诗兰黛</a>
+						<a title="" href="ProductList2.html">控油</a>
+						<a title="" href="ProductList0.html">去角质</a>
+						<a title="" href="ProductList1.html">防晒</a>
+						<a title="" href="ProductList2.html">减肥</a>
+						<a title="" href="ProductList0.html">脱毛</a>
+					</div>
+					<div id="bigAutocompleteContent" class="searchBox"></div>
+				</div>
+				<!--购物车-->
+				<div class="shop fr clearfix relative">
+					<a href="shopping_cart.html" class="shop-bag relative fl">
+						<span><img src="img/gwc.png"></span>
+						<span class="cart_hover">购物袋 (0)</span>
+						<span>：</span>
+						<span class="bag_precie">￥0.00</span>
+						<span class="bag_tips"></span>
+					</a>
+					<div class="gwc-cont">
+						<div class="mycart_popup">
+							<div class="tip">购物车暂无商品<br>快去挑选自己钟爱的商品吧~~</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="hNav_box">
+			<div class="hNav container">
+				<ul class="nav_title clearfix">
+					<li class="fl">
+						<a href="index.html" class="title">首页</a>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">护肤</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">卸妆</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">洁面</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面膜</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面霜</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">彩妆</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">粉底</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">隔离</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">遮瑕</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眉笔</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眼线</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美唇</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList2.html" class="title">香水</a>
+						<dl>
+							<dd>
+								<a href="ProductList2.html">香水EDP</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">淡香水EDT</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">固体香水</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">香体乳</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">身体护理</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">沐浴用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">身体护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">纤维护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">手足部护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">脱毛用品</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">洗发护发</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">洗发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">护发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美发用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">烫发染发</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--中间-->
+		<div class="container">
+			<div class="shoppingCart container">
+				<!--流程-->
+				<div class="mycar_hd">
+					<ul class="schedule schedule01 clearfix">
+						<li class="selected">1.我的购物车</li>
+						<li>2.填写核对订单信息</li>
+						<li>3.成功提交订单</li>
+					</ul>
+				</div>
+				<!--商品列表-->
+				<div class="cList">
+					<ul class="cList_head clearfix">
+						<li class="col1">
+							<input class="selectall" checked="" name="productitem_all" type="checkbox">
+							<label for="selectedall">全选</label>
+						</li>
+						<li class="col2">商品</li>
+						<li class="col3">价格（元）</li>
+						<li class="col4">数量</li>
+						<li class="col5">小计</li>
+						<li class="col6">库存状态</li>
+						<li class="col7">操作</li>
+					</ul>
+					<div class="cList_body">
+						<ul class="cList_box clearfix">
+						<li class="col1 cbox">
+							<input class="check" checked="" name="productitem" data-caritem-id="3964486" type="checkbox"></li>
+						<li class="col2 product clearfix">
+							<div class="pic fl">
+								<a href="#">
+									<img src="https://img01.vmei.com/201609/C2ADDF774B2B44A485D03EDBB1F01A00.jpg" width="90" height="80" alt="Dior/迪奥 傲姿唇膏3.5g 烈焰/烈艳蓝金新版 哑光版全色系 娜塔莉广告色999 董卿春晚同款"></a>
+							</div>
+
+							<div class="detail fl">
+								<h4 class="name"><a target="_blank" href="/product/510430.html">Dior/迪奥 傲姿唇膏3.5g 烈焰/烈艳蓝金新版 哑光版全色系 娜塔莉广告色999 董卿春晚同款</a></h4>
+								<p>颜色 : 047#MISS </p>
+								<div class="shop_coupon">
+								</div>
+							</div>
+						</li>
+						<li class="col3 price">
+							<span class="amount">
+								<s>￥ 320.00</s><br>￥ 248.00
+                   			</span>
+						</li>
+						<li class="col4 subtotal">
+							<span class="amount_tool">
+                        		<a class="icon icon-minus" href="javascript:;" title="数量 - 1" data-itemid="3964486">-</a>
+                       			<input type="text" name="buy_number" id="buyNum_3964486" value="1">
+                        		<a class="icon icon-plus" href="javascript:;" title="数量 + 1" data-itemid="3964486">+</a>
+                   			 </span>
+						</li>
+						<li class="col5 sum">￥ <span class="amount">248.00</span></li>
+						<li class="col6 state" data-exist="true">
+							有货 </li>
+						<li class="col7 operation">
+							<a class="delete" href="javascript:;" data-id="3964486">删除</a>
+							<a class="collect" href="javascript:;" data-productid="510430">收藏</a>
+						</li>
+					</ul>
+					<ul class="cList_box clearfix">
+						<li class="col1 cbox">
+							<input class="check" checked="" name="productitem" data-caritem-id="3964486" type="checkbox"></li>
+						<li class="col2 product clearfix">
+							<div class="pic fl">
+								<a href="#">
+									<img src="https://img01.vmei.com/201609/C2ADDF774B2B44A485D03EDBB1F01A00.jpg" width="90" height="80" alt="Dior/迪奥 傲姿唇膏3.5g 烈焰/烈艳蓝金新版 哑光版全色系 娜塔莉广告色999 董卿春晚同款"></a>
+							</div>
+
+							<div class="detail fl">
+								<h4 class="name"><a target="_blank" href="/product/510430.html">Dior/迪奥 傲姿唇膏3.5g 烈焰/烈艳蓝金新版 哑光版全色系 娜塔莉广告色999 董卿春晚同款</a></h4>
+								<p>颜色 : 047#MISS </p>
+								<div class="shop_coupon">
+								</div>
+							</div>
+						</li>
+						<li class="col3 price">
+							<span class="amount">
+								<s>￥ 320.00</s><br>￥ 248.00
+                    		</span>
+						</li>
+						<li class="col4 subtotal">
+							<span class="amount_tool">
+                        		<a class="icon icon-minus" href="javascript:;" title="数量 - 1" data-itemid="3964486">-</a>
+                        		<input type="text" name="buy_number" id="buyNum_3964486" value="1">
+                        		<a class="icon icon-plus" href="javascript:;" title="数量 + 1" data-itemid="3964486">+</a>
+                    		</span>
+						</li>
+						<li class="col5 sum">￥ <span class="amount">248.00</span></li>
+						<li class="col6 state" data-exist="true">
+							有货 </li>
+						<li class="col7 operation">
+							<a class="delete" href="javascript:;" data-id="3964486">删除</a>
+							<a class="collect" href="javascript:;" data-productid="510430">收藏</a>
+						</li>
+					</ul>
+					</div>
+					<!--总价栏-->
+					<ul class="total_price">
+						<li>
+							<i class="totalItem">0</i>件商品，共计：&nbsp;&nbsp;&nbsp;&nbsp;<span class="total">¥ <i class="amount">0.00</i>元</span>
+						</li>
+					</ul>
+					<!--结算栏-->
+					<div class="cList_foot clearfix">
+						<div class="other">
+							<span class="info">应付金额（不包含运费） <span class="total itemsPrice">￥ <i class="amount">0.00</i></span></span>
+						</div>
+						<div class="btns fr">
+							<button type="submit" class="btn" value="现在结账" disabled="disabled">现在结账</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--确认删除框-->
+			<div class="hintBox">
+				<div class="hint_hd">消息
+					<a class="close" href="#">关闭</a>
+				</div>
+				<div class="hint_bd">确认删除？</div>
+				<div class="hint_ft">
+					<a class="btn confirm">确认</a>
+					<a class="btn cancel">取消</a>
+				</div>
+			</div>
+			<!--收藏提示-->
+			<div class="collect_box">
+				<p>收藏成功</p>
+			</div>
+			<!--底部-->
+			<div class="footer_box clearfix">
+			<div class="wrap clearfix">
+				<div class="footer_help">
+					<a class="dilan_logo" href="/">logo</a>
+					<ul>
+						<li>
+							<p><strong>帮助FAQ</strong></p>
+							<p>
+								<a href="help.html" target="_blank">注册/登录</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">购物流程</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">售后服务</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">积分说明</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">会员等级</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>支付服务</strong></p>
+							<p>
+								<a href="help.html" target="_blank">在线支付</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">货到付款</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">常见问题</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">微信关注</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>配送服务</strong></p>
+							<p>
+								<a href="help.html" target="_blank">配送方式</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">配送时间</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>关于我们</strong></p>
+							<p>
+								<a href="help.html" target="_blank">关于唯美美妆</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">申请加入唯美美妆</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">商务合作</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">使用条款及法律资料</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">个人隐私和安全保障</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>订单问题</strong></p>
+							<p>
+								<a href="help.html" target="_blank">如何修改订单</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">如何取消订单</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">商品降价如何处理</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">为何订单被关闭</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">订单取消成功为何无退款</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="policy clearfix">
+				<div class="wrap">
+					<ul class="clearfix">
+						<li>
+							<a href="help.html" target="_blank" title="关于我们">关于我们</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="友情链接">友情链接</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="商家入驻">商家入驻</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="开放平台">开放平台</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="加入我们">加入我们</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="商务合作">商务合作</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="隐私条例">隐私条例</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="使用条款">使用条款</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						<p>Copyright © 2006 - 2016
+							<a href="help.html">南京思芙美网络科技有限公司 VMEI.COM</a> 保留一切权利 商业登记证号 : 62052243-000</p>
+						<p class="paylogo"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var $all = $(".selectall");
+			var $check = $("input[class='check']");
+			var $del = $(".delete");
+			var $minus = $(".icon-minus");
+			var $add = $(".icon-plus");
+			getPrice();
+			payBtn();
+
+			//单击全选框
+			$all.click(function() {
+				$check.prop("checked", this.checked);
+				getPrice();
+				payBtn();
+			});
+			//全选&取消全选
+			$check.each(function(i) {
+				$check.eq(i).click(function() {
+					if(isCheckAll()) {
+						$all.prop("checked", true);
+					} else {
+						$all.prop("checked", false);
+					}
+					getPrice();
+					payBtn();
+				})
+			})
+
+			function isCheckAll() {
+				var all = $check.length;
+				var sum = 0;
+				$check.each(function(i) {
+					if($check.eq(i).is(":checked")) {
+						sum++;
+					}
+				});
+				if(all == sum) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			//删除
+			$(".cList_box").on("click", ".delete", function() {
+				var self = $(this);
+				$(".hintBox").css("display", "block");
+				$(".hintBox .hint_ft .confirm").click(function() {
+					self.parent().parent().remove();
+				})
+				getPrice();
+			});
+			$(".hint_ft .confirm").click(function() {
+				$(".hintBox").css("display", "none");
+			});
+			$(".hint_ft .cancel").click(function() {
+				$(".hintBox").css("display", "none");
+			});
+			$(".hint_hd .close").click(function() {
+				$(".hintBox").css("display", "none");
+			})
+			//总价
+			function getPrice() {
+				var money = 0.0;
+				var total_num = 0;
+				$('input[class="check"]:checked').each(function() {
+					var price = parseFloat($(this).parents('ul').find('.col5 span').text());
+					var tal = parseInt($(this).parents("ul").find(".subtotal input[type='text']").val())
+					money += price;
+					total_num += tal;
+				});
+				$('i.amount').text(money.toFixed(2));
+				$('i.totalItem').text(total_num);
+			}
+			//收藏
+			$(".cList_box").on("click", ".collect", function() {
+				$(".collect_box").stop(true).show().delay(1000).hide(50);
+			})
+			//结算按钮
+			function payBtn() {
+				if($check.is(":checked")) {
+					$(".cList_foot button").addClass("btn-red");
+					$(".cList_foot button").removeAttr("disabled");
+				} else {
+					$(".cList_foot button").removeClass("btn-red");
+					$(".cList_foot button").prop("disabled", "disabled");
+				}
+			}
+			$(".cList_foot button").click(function() {
+				window.location.href = "settlement.html";
+			});
+			//数量加减
+			$minus.click(function() {
+				var num = parseInt($(this).siblings("input[type='text']").val());
+				var pri = parseFloat($(this).parents("ul").find(".price span").text().slice(19, 25));
+				num--;
+				var pric = num * pri;
+				if(num < 1) {
+					alert("购买数量不能小于1")
+				} else {
+					$(this).siblings("input[type='text']").val(num);
+					$(this).parents("ul").find(".sum span").text(pric.toFixed(2));
+					pri -= pri;
+				}
+				getPrice();
+			});
+			$add.click(function() {
+				var num = parseInt($(this).siblings("input[type='text']").val());
+				var pri = parseFloat($(this).parents("ul").find(".price span").text().slice(19, 25));
+				num++;
+				var pric = num * pri;
+				$(this).siblings("input[type='text']").val(num);
+				$(this).parents("ul").find(".sum span").text(pric.toFixed(2));
+				getPrice();
+			});
+		})
+	</script>
+	<script src="js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var arr = JSON.parse(Cookies.get('arr'));
+			for (var i = 0; i < arr.length; i++) {
+				var html=$('<ul class="cList_box clearfix"><li class="col1 cbox"><input class="check" checked="" name="productitem" data-caritem-id="3964486" type="checkbox"></li><li class="col2 product clearfix">'+
+					'<div class="pic fl"><a href="#"><img src="'+arr[i].imgSrc+'" width="90" height="80" alt=""></a></div>'+
+					'<div class="detail fl"><h4 class="name"><a target="_blank" href="/product/510430.html">'+arr[i].goodsTitle+'</a></h4>'+			
+					'<p>'+arr[i].goodsSizeTitle+arr[i].goodsSize+'</p><div class="shop_coupon"></div></div></li><li class="col3 price"><span class="amount"><s>'+arr[i].goodsOldPrice+'</s><br>￥'+arr[i].goodsPrice+
+                   	'</span></li><li class="col4 subtotal"><span class="amount_tool"><a class="icon icon-minus" href="javascript:;" title="数量 - 1" data-itemid="3964486">-</a>'+
+					'<input type="text" name="buy_number" id="buyNum_3964486" value="'+arr[i].goodsNum+'">'+
+                    '<a class="icon icon-plus" href="javascript:;" title="数量 + 1" data-itemid="3964486">+</a></span></li>'+
+                   	'<li class="col5 sum">￥ <span class="amount">'+arr[i].goodsSum+'</span></li><li class="col6 state" data-exist="true">有货 </li>'+		 
+                   	'<li class="col7 operation"><a class="delete" href="javascript:;" data-id="3964486">删除</a><a class="collect" href="javascript:;" data-productid="510430">收藏</a></li></ul>')
+				$(".cList_body").append(html);
+			}
+		})
+	</script>
+	<script src="js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var arr = JSON.parse(Cookies.get('arr'));
+			for (var i = 0; i < arr.length; i++) {
+				var html=$('<ul class="cList_box clearfix"><li class="col1 cbox"><input class="check" checked="" name="productitem" data-caritem-id="3964486" type="checkbox"></li><li class="col2 product clearfix">'+
+					'<div class="pic fl"><a href="#"><img src="'+arr[i].imgSrc+'" width="90" height="80" alt=""></a></div>'+
+					'<div class="detail fl"><h4 class="name"><a target="_blank" href="/product/510430.html">'+arr[i].goodsTitle+'</a></h4>'+			
+					'<p>'+arr[i].goodsSizeTitle+arr[i].goodsSize+'</p><div class="shop_coupon"></div></div></li><li class="col3 price"><span class="amount"><s>'+arr[i].goodsOldPrice+'</s><br>￥'+arr[i].goodsPrice+
+                   	'</span></li><li class="col4 subtotal"><span class="amount_tool"><a class="icon icon-minus" href="javascript:;" title="数量 - 1" data-itemid="3964486">-</a>'+
+					'<input type="text" name="buy_number" id="buyNum_3964486" value="'+arr[i].goodsNum+'">'+
+                    '<a class="icon icon-plus" href="javascript:;" title="数量 + 1" data-itemid="3964486">+</a></span></li>'+
+                   	'<li class="col5 sum">￥ <span class="amount">'+arr[i].goodsSum+'</span></li><li class="col6 state" data-exist="true">有货 </li>'+		 
+                   	'<li class="col7 operation"><a class="delete" href="javascript:;" data-id="3964486">删除</a><a class="collect" href="javascript:;" data-productid="510430">收藏</a></li></ul>')
+				$(".cList_body").append(html);
+			}
+		})
+	</script>
+</html>

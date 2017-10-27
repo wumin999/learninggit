@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/product_info.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="head_top">
+			<ul class="container clearfix">
+				<li class="fl">hi~唯美美妆欢迎爱美的你~！</li>
+				<li class="fl">
+					<a href="log.html">马上登录</a>
+				</li>
+				<li class="line fl">|</li>
+				<li class="fl">
+					<a href="resiger.html">立即注册</a>
+				</li>
+				<li class="fr">
+					<a href="welcome.html">个人中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">帮助中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">品牌入驻</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">开放平台</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">隐私条款</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="app fr relative">
+					<a href="#">
+						<img src="img/icon_app.png" /> 手机唯美美妆
+					</a>
+					<div class="app_phone">
+						<span class="app_arrow"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--logo&搜索框-->
+		<div class="head">
+			<div class="container clearfix">
+				<!--logo-->
+				<div class="logo fl">
+					<a href="index.html">
+						<span class="l_name">唯美美妆</span>
+						<span class="l_website">VMEI.COM</span>
+					</a>
+				</div>
+				<!--搜索框-->
+				<div class="search fl clearfix">
+					<form class="clearfix" autocomplete="off" action="/products" method="get" id="topSearchBar">
+						<input type="hidden" name="nid" value="">
+						<div class="search-table ser_all fl clearfix">
+							<span class="cur fl">
+                        		<div class="search_icon"></div>
+          					</span>
+							<div class="list">
+								<ul>
+									<li>
+										<a name="all">全部</a>
+									</li>
+									<li>
+										<a name="all">护肤</a>
+									</li>
+									<li>
+										<a name="all">彩妆</a>
+									</li>
+									<li>
+										<a name="all">香水</a>
+									</li>
+									<li>
+										<a name="all">身体护理</a>
+									</li>
+									<li>
+										<a name="all">洗发护发</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<span class="txt fl" style="position: relative;">
+							<input type="text" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" data-default="香水" name="keyword" value="">
+						</span>
+						<span class="searchBtn fl"><input type="submit" value=""></span>
+					</form>
+					<div class="top_search">
+						<a title="" href="ProductList0.html">保湿</a>
+						<a title="" href="ProductList1.html">兰蔻</a>
+						<a title="" href="ProductList2.html">雅诗兰黛</a>
+						<a title="" href="ProductList2.html">控油</a>
+						<a title="" href="ProductList0.html">去角质</a>
+						<a title="" href="ProductList1.html">防晒</a>
+						<a title="" href="ProductList2.html">减肥</a>
+						<a title="" href="ProductList0.html">脱毛</a>
+					</div>
+					<div id="bigAutocompleteContent" class="searchBox"></div>
+				</div>
+				<!--购物车-->
+				<div class="shop fr clearfix relative">
+					<a href="shopping_cart.html" class="shop-bag relative fl">
+						<span><img src="img/gwc.png"></span>
+						<span class="cart_hover">购物袋 (0)</span>
+						<span>：</span>
+						<span class="bag_precie">￥0.00</span>
+						<span class="bag_tips"></span>
+					</a>
+					<div class="gwc-cont">
+						<div class="mycart_popup">
+							<div class="tip">购物车暂无商品<br>快去挑选自己钟爱的商品吧~~</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="hNav_box">
+			<div class="hNav container">
+				<ul class="nav_title clearfix">
+					<li class="fl">
+						<a href="index.html" class="title">首页</a>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">护肤</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">卸妆</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">洁面</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面膜</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面霜</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">彩妆</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">粉底</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">隔离</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">遮瑕</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眉笔</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眼线</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美唇</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList2.html" class="title">香水</a>
+						<dl>
+							<dd>
+								<a href="ProductList2.html">香水EDP</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">淡香水EDT</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">固体香水</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">香体乳</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">身体护理</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">沐浴用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">身体护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">纤维护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">手足部护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">脱毛用品</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">洗发护发</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">洗发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">护发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美发用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">烫发染发</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<!--左侧商品图片部分-->
+			<div class="product_img fl">
+				<div class="scroll clearfix" id="goods1">
+					<div id="bigpic" class="jqzoom">
+						<div><img src="img/FC16B725C88242FBB6DF80CB74CA596D.jpg" /></div>
+						<div><img src="img/74BA1F1F025047F49CB7D7BED9AA23F5.jpg" /></div>
+						<div><img src="img/BB68A15698AD4B26ABC19A279DD53F45.jpg" /></div>
+					</div>
+					<div id="ShowBigPictureBox" style=" position:absolute;top: 40px; left: 400px; z-index: 100; overflow:hidden; display:none; border:3px solid #ccc; padding:5px; background-repeat:no-repeat; background-color:#fff; width:300px; height:300px;">
+						<!--这里显示放大效果-->
+					</div>
+
+					<div id="item" class="item">
+						<a id="left" class="prev"></a>
+						<a id="right" class="next"></a>
+						<ul class="clearfix">
+							<li class="active">
+								<img src="img/FC16B725C88242FBB6DF80CB74CA596D.jpg" />
+							</li>
+							<li class="on">
+								<img src="img/74BA1F1F025047F49CB7D7BED9AA23F5.jpg" />
+							</li>
+							<li class="on">
+								<img src="img/BB68A15698AD4B26ABC19A279DD53F45.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="clearfix">
+					<span>海外正品</span>
+					<span>香港直发</span>
+					<span>无理由退换</span>
+					<span id="collect" class="collect  clearfix">
+					<i class="collect_img"></i><span style="border: 0;margin-left: -8px;">收藏</span>
+				</span>
+				</p>
+
+			</div>
+			<!--右侧 商品详情部分-->
+			<div class="product_summray fr">
+				<div class="crumb">
+					<ul class="clearfix">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li class="step_arrow">
+
+						</li>
+						<li>
+							<a href="ProductList0.html">礼盒套装</a>
+						</li>
+						<li class="step_arrow">
+
+						</li>
+						<li>
+							<a href="ProductList1.html">护肤套装</a>
+						</li>
+					</ul>
+				</div>
+				<div class="product_title">
+					<h2 style="color: #000000;">Hera/赫拉 男士水乳护理两件套盒 滋润型 保湿补水 洁面膏 保湿水 乳液 面霜 防晒霜</h2>
+				</div>
+				<div>
+					<div class="preferential">
+						<img src="img/20170831151057_03.png" />
+						<span>中国内地实付满299包邮</span>
+						<img src="img/20170831151057_05.png" />
+						<span>限时特价</span>
+					</div>
+				</div>
+				<div class="longname">
+					含淡淡香气，为油性混合性皮肤提供滋润均衡的水分护理。天然活性因子给男性因为压力而变得敏感的皮肤补充精华和效能。
+				</div>
+				<div class="page_hoice">
+					<div class="page_price">
+						<p class="clearfix">
+							<span class="curr_price">
+								￥<b>454.00</b>
+							</span>
+						</p>
+					</div>
+					<div class="country_price">
+						<span class="country"><img src="img/flag_hongkong.png"/></span>
+						<span>香港专柜价</span>
+						<span class="em">HK$1488.00</span>
+						<span class="exchange_rate">汇率：0.845</span>
+						<span class="">折算</span>
+						<span class="em" id="old_price">¥1257.00</span>
+					</div>
+					<div class="page_attribute">
+						<div class="longname1">
+							<label>
+								美妆淘宝
+							</label>
+							<p>境外正品采购，香港直邮<span>（运费10.00元）</span></p>
+							<p>保税区发货，海关监管</p>
+						</div>
+						<div class="summery">
+							国际物流：全场满299包邮
+						</div>
+						<div class="choose clearfix">
+							<span class="fl">
+								商品规格：
+							</span>
+							<span> 
+								<ul id="choose" class="clearfix fl">
+									<a ><li class="choose_list">套装1</li></a>
+									<a ><li class="choose_list">套装2</li></a>
+									<a ><li class="choose_list">套装3</li></a>
+								</ul>
+							</span>
+						</div>
+						<div id="num" class="num clearfix">
+							<span>购买数量：</span>
+							<span id="cut">
+								<a class="cut"></a>
+							</span>
+							<input type="text" name="" id="" value="1" />
+							<span id="add">
+								<a class="add"></a>
+							</span>
+						</div>
+						<div class="evaluation clearfix">
+							<span>月销售量：</span>
+							<span style="color: #d91966;">170</span>
+							<span>累计评论:</span>
+							<span style="color: #d91966;">0</span>
+						</div>
+						<div class="buy">
+							<a href="settlement.html"><span><img src="img/20170831163506_03.png"/></span></a>
+							<a><span><img src="img/20170831163506_05.png"/></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="page_info">
+				<div class="read_order_wrap ">
+					<a href="#"><span>商品描叙</span></a>
+					<a href="#comment"><span>用户评论</span></a>
+					<a href="#consult"><span>我要咨询</span></a>
+				</div>
+				<div class="pro_info_box">
+					<div class="productinfo clearfix">
+						<span class="pro_info_box_title"></span>
+						<span><img src="img/information.png"/></span>
+						<span class="pro_info_box_title"></span>
+					</div>
+					<br />
+					<span style="font-size: 12px; padding-bottom: 10px;">
+					令肌肤光滑细致。帮助肌肤细胞回复正常的代谢周期，保湿肌肤滋润，水嫩有光泽且改善肌肤质地，维持肌肤细致光滑。蕴含绿茶干细胞，其天然神奇的再生力量让肌肤自我修复，提供丰足水分至肌肤深层并紧紧锁住 击退皱纹及瑕疵，80%透明质酸成分，形成澎湃补水力量，即时为肌肤解渴，全天候预防因干燥引起的肌肤松弛欠弹性，缔造水润弹力肌肤。
+					</span>
+					<br />
+					<span style="font-size: 14px;color: #000000; "><b>商品名称：</b></span> &nbsp;&nbsp;&nbsp;&nbsp;Hera/赫拉 男士水乳护理两件套盒 滋润型 保湿补水 洁面膏 保湿水 乳液 面霜 防晒霜<br />
+
+					<span style="font-size: 14px;color: #000000;"><b>品牌：</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hera/赫拉<br />
+
+					<span style="font-size: 14px;color: #000000;"><b>市场参考价：</b></span>&nbsp;￥880 <br />
+
+					<span style="font-size: 14px;color: #000000;"><b>功效：</b></span>
+					<span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;洁面膏：浓密丰富的泡沫能深入清洁肌肤内部，聚合物成分可令肌肤在 剃须时保持光滑，是能确保剃须舒适的双效洁面泡沫。
+					</span>
+
+					<span class="row">
+							保湿水：此款宝贝滋润不油腻，达到男性皮肤水油平衡功效。它也可作为男士日常须后护理水，让您从须后皮肤毛孔粗大、皮肤粗糙中解脱出来。
+					</span>
+
+					<span class="row">
+							乳液：质地轻盈，用后倍感滋润不油腻，能迅速被肌肤吸收，保持肌肤水润剔透的调理液。
+					</span>
+
+					<span class="row">
+							面霜：含淡淡香气，为皮肤提供滋润均衡的水分护理。这是一款专门为易变干燥的皮肤提供充足水分以及细腻清爽感的保湿抗皱面霜。
+					</span>
+
+					<span class="row">
+							防晒霜：质地清爽细腻，防止因阳光照射产生的皮肤水分过度蒸发，保湿效果明显。本品可以强效阻挡阳光中对皮肤有害和使皮肤晒伤和晒黑的 紫外线和红外线。
+					</span>
+					<br />
+
+					<div id="" class="productinfo clearfix">
+						<span class="pro_info_box_title"></span>
+						<span><img src="img/details.png"/></span>
+						<span class="pro_info_box_title"></span>
+					</div>
+					<img style="width: 900px; margin-left: 100px;" src="img/9A89F7087C3E4E61B6741F313E0807CD.jpg" />
+					<img style="width: 900px; margin-left: 100px;" src="img/6A0EBE28B2F14794B3AB57D74B8332B4.jpg" />
+					<div id="comment" class="productinfo clearfix">
+						<div class="clearfix">
+							<span class="pro_info_box_title"></span>
+							<span><img src="img/comments.png"/></span>
+							<span class="pro_info_box_title"></span>
+						</div>
+						<ul style="border-bottom: 1px solid #CCCCCC; margin-bottom: 24px;" class="clearfix" id="comment_list">
+							<li class="com_list1">全部评论(66)</li>
+							<li class="com_list">所有好评(64)</li>
+							<li class="com_list">中评差评(2)</li>
+							<li class="com_list">有图评论(30)</li>
+						</ul>
+						<ul>
+							<li class="comment clearfix">
+								<div class="comment_pic fl">
+									<img style="width: 60px; height: 60px;" src="img/AD56D44741574763B31E01DBCA6F5071.jpg" /><br />
+									<div class="comment_txt_name">
+										爱不会一直都在
+									</div>
+								</div>
+								<div class="comment_txt clearfix fr">
+									<div>
+										整体评价：&nbsp;&nbsp;<img src="img/detail-1_star5.png" alt="" />&nbsp;&nbsp;5分&nbsp;&nbsp;非常满意
+									</div>
+									<div style="float: left;">
+										评价内容：&nbsp;&nbsp;
+									</div>
+									<div class="comment_txt_content">
+										记不清第几次买了，包装很好！送的手霜也非常好用！非常划算，比专柜便宜，会继续支持下去的！
+									</div>
+									<div class="comment_txt_pic clearfix">
+										<div style="float: left;">
+											评价图片：
+										</div>
+										<img style="width: 52px; height: 52px;" src="img/2C0B9AC0217B411780D2C30AFFAC1639.jpg" />
+										<img style="width: 52px; height: 52px;" src="img/9AB7724B66BB4FADAC47D8B07584C793.jpg" />
+										<img style="width: 52px; height: 52px;" src="img/96C95FBC25CA46468FC7DC742FC0A68D.jpg" />
+									</div>
+								</div>
+							</li>
+							<li class="comment clearfix">
+								<div class="comment_pic fl">
+									<img style="width: 60px; height: 60px;" src="img/AD56D44741574763B31E01DBCA6F5071.jpg" /><br />
+									<div class="comment_txt_name">
+										1862***8790
+									</div>
+								</div>
+
+								<div class="comment_txt fr">
+									<div>
+										整体评价：&nbsp;&nbsp;<img src="img/detail-1_star5.png" alt="" />&nbsp;&nbsp;5分&nbsp;&nbsp;非常满意
+									</div>
+									<div style="float: left;">
+										评价内容：&nbsp;&nbsp;
+									</div>
+									<div class="comment_txt_content">
+										晒晒先……东西很舒服用着，容量很大很划算，已经是小美家的忠实粉丝了。以后会一直追随小美的脚步美下去哒，嘿嘿
+									</div>
+									<div class="comment_txt_pic clearfix">
+										<div style="float: left;">
+											评价图片：
+										</div>
+										<img style="width: 52px; height: 52px;" src="img/7627B043F2E048268C3FB9993D99C27B.jpg" />
+										<img style="width: 52px; height: 52px;" src="img/CB868D1129894412B282B33EA4A8B493.jpg" />
+										<img style="width: 52px; height: 52px;" src="img/D4DB8C9AFDA74A1A8FFF162F604AD57D.jpg" />
+									</div>
+
+								</div>
+							</li>
+						</ul>
+						<div class="comment_page clearfix">
+							<input class="go" type="button" name="" id="" value="GO" />
+							<div style="float: right; margin: 0 8px;">
+								页
+							</div>
+							<input class="page" type="text" name="" id="" value="" />
+							<div style="float: right; margin: 0 8px;">
+								到
+							</div>
+							<input class="page_num" type="button" name="" id="" value=">" />
+							<input class="page_num" type="button" name="" id="" value="9" />
+							<input class="page_num" type="button" name="" id="" value="8" />
+							<div style="float: right;">
+								.....
+							</div>
+							<input class="page_num" type="button" name="" id="" value="2" />
+							<input class="page_num" type="button" name="" id="" value="1" />
+							<input class="page_num" type="button" name="" id="" value="<" />
+						</div>
+					</div>
+					<div id="consult" class="productinfo clearfix">
+						<span class="pro_info_box_title"></span>
+						<span><img src="img/consulting.png"/></span>
+						<span class="pro_info_box_title"></span>
+
+					</div>
+					<div id="consulting" class="consult clearfix">
+						<a><span>商品咨询&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>
+						<a><span>我的咨询&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>
+						<a><span>发货&配送&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>
+						<a><span>退货&换货&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>
+						<a><span>关税说明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>
+					</div>
+					<ul id="consult_list" class="consult_lists">
+						<li class="consult_form">
+							<textarea class="text" name="" rows="" cols="" placeholder="我要咨询"></textarea>
+							<input type="button" name="" id="" value="提交" />
+						</li>
+						<li style="padding: 20px;background: #efefef;color: ##9E9A9C;">
+							<div>
+								游客1：效果如何？
+							</div>
+							<div>
+								游客2：是真品么？
+							</div>
+						</li>
+						<li class="consult_list">
+							付款後通常可以在7-15個工作日內送達（具體視清關和節假日情況而定）
+						</li>
+						<li class="consult_list">
+							如有商品品質問題及配送問題可以辦理免費退換貨
+							<br /> 如因顧客變心退換貨運費由顧客承擔
+							<br /> 返品時產品到倉庫驗貨之後進行退款
+							<br /> 在 我的订单 中可以進行申請
+							<br /> 退貨申請在確認收貨後3個工作日內可以退款完成
+							<br /> 如是信用卡退款，按照信用卡公司規定可能有所延遲
+						</li>
+						<li class="consult_list">
+							我们向全球超过200个国家提供付运服务。
+							<br /> 90%的订单付运不需要缴纳额外费用，尤其是付运到美国，澳大利亚以及新西兰的订单。
+							<br /> 若您遇到需要支付VAT(增值税)的情况，我们将为您安排补偿税款退款。但我们强调此举只给予商誉及善意，而非责任或承兑对于接受退税安排的国家订单。
+							<br /> 若您在签收包裹的时候被征收有关税项，请领取包裹并支付税款，提交VAT退款表格 ，包括您的税款收据。请注意所有退税回赠必需于该订单日期的2个月内提出退款要求。
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<iframe src="footer.html" frameborder="0" width="100%" height="390px"></iframe>
+
+		<!--<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			
+				//轮播图部分
+				var index = 0;
+				$("#right").click(function() {
+					index++;
+					$("#item li").eq(index).removeClass("on").addClass("active").siblings().addClass("on");
+					$("#bigpic div").eq(index).removeClass("bigpic").siblings().addClass("bigpic");
+					if(index >= $("#item li").length) {
+						index = 2
+					}
+				})
+				$("#left").click(function() {
+					index--;
+					if(index <= $("#item li").length - 3) {
+						index = 0
+					}
+					$("#item li").eq(index).removeClass("on").addClass("active").siblings().addClass("on");
+					$("#bigpic div").eq(index).removeClass("bigpic").siblings().addClass("bigpic");
+
+				})
+				$("#item li").click(function() {
+					index = $(this).index();
+					$("#item li").eq(index).removeClass("on").addClass("active").siblings().addClass("on");
+					$("#bigpic div").eq(index).removeClass("bigpic").siblings().addClass("bigpic");
+				})
+				//收藏部分
+				$("#collect").click(function() {
+					if($(this).find("span").text() == "已收藏") {
+						$(this).find("span").text("收藏")
+					} else {
+						$(this).find("span").text("已收藏")
+					}
+
+				})
+				// 商品规格选择部分
+
+				$("#choose li").click(function() {
+					var num = $(this).index()
+					$("#choose li").removeClass("choose_num").addClass("choose_list")
+					$(this).eq(num).removeClass("choose_list").addClass("choose_num")
+
+				})
+				//数量加减部分
+				var mount = $("#num input").val()
+				$("#add").click(function() {
+					mount++;
+					$("#num input").prop("value", mount);
+				})
+				$("#cut").click(function() {
+					if(mount <= 0) {
+						mount = 0
+						$("#num input").prop("value", mount);
+					} else {
+						mount--;
+						$("#num input").prop("value", mount);
+					}
+				})
+				//评论区域
+				$("#comment_list li").click(function() {
+					var index = $(this).index();
+					$(this).removeClass("com_list").addClass("com_list1");
+					$(this).siblings().removeClass("com_list1").addClass("com_list");
+				})
+				//查询区选项卡
+				$("#consulting a").click(function() {
+					var x = $(this).index();
+					$("#consult_list li").eq(x).css("display", "block");
+					$("#consult_list li").eq(x).siblings().css("display", "none");
+				});
+			})
+		</script>
+		<script type="text/javascript">
+			//图片放大镜
+			//创建函数
+			(function($) {
+				$.fn.JNMagnifier = function(setting) {
+
+					if(setting && setting.renderTo) {
+						if(typeof(setting.renderTo) == "string") {
+							setting.renderTo = $(setting.renderTo);
+						}
+					} else {
+						return;
+					}
+					var _img_org_ = this.children("img");
+					_img_org_.css("cursor", "pointer");
+
+					var __w = 0;
+					var __h = 0;
+
+					var __left = this.offset().left;
+					var __top = this.offset().top-120;
+
+					if(this.offsetParent()) {
+						__left += this.offsetParent().offset().left;
+						__top += this.offsetParent().offset().top;
+					}
+
+					var _move_x = 0;
+					var _move_y = 0;
+
+					var _val_w = (setting.renderTo.width() / 2);
+					var _val_h = (setting.renderTo.height() / 2);
+
+					_img_org_.mouseover(function() {
+						setting.renderTo.html('<img src="' + _img_org_.attr("src") + '" style="position:absolute;" id="JNMagnifierrenderToImg" />');
+						setting.renderTo.show();
+						var timer = setInterval(function() {
+							__w = $("#JNMagnifierrenderToImg").width() / _img_org_.width();
+							__h = $("#JNMagnifierrenderToImg").height() / _img_org_.height();
+							if(__w > 0) {
+								clearInterval(timer);
+							}
+						}, 100);
+					});
+
+					_img_org_.mouseout(function() {
+						setting.renderTo.hide();
+					});
+
+					_img_org_.mousemove(function(e) {
+						_move_x = 0 - Math.round((document.documentElement.scrollLeft + e.clientX - __left) * (__w));
+						_move_y = 0 - Math.round((document.documentElement.scrollTop + e.clientY - __top) * (__h));
+						$("#JNMagnifierrenderToImg").css({
+							"left": _move_x + "px ",
+							"top": _move_y + "px"
+						});
+					});
+				}
+			})(jQuery);
+			//调用函数
+			$("#bigpic div").each(function() {
+				if($(this).css("display") == "block") {
+					$(this).JNMagnifier({
+						renderTo: "#ShowBigPictureBox"
+					});
+				}
+			})
+		</script>
+		<script src="js/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var num = $('#num input[type="text"]').val();
+			var price = $(".page_price .curr_price b").text();
+			var sum = num * price;
+
+			$('.add_cart').click(function() {
+				var goods = {
+					goodsId:$("#goods1"),
+					imgSrc: "img/FC16B725C88242FBB6DF80CB74CA596D.jpg",
+					goodsTitle: 'Hera/赫拉 男士水乳护理两件套盒 滋润型 保湿补水 洁面膏 保湿水 乳液 面霜 防晒霜',
+					goodsOldPrice:$(".country_price #old_price").text(),
+					goodsPrice: price,
+					goodsSizeTitle: $('.choose .size_title').text(),
+					goodsSum: sum,
+					goodsNum: num,
+					goodsSize: function () {
+						$(".choose li").click(function () {
+							return $(this);
+						})
+					}
+				};
+				var arr = Cookies.get("arr");
+				if(arr) {
+					console.log(arr);
+					var flag = 0;
+					var arr = JSON.parse(Cookies.get('arr'));
+					for(var i = 0; i < arr.length; i++) {
+						if(arr[i].goodsId == goods.goodsId) {
+							flag = 1;
+							console.log('sss');
+							var int1 = parseInt(num);
+							var copy = parseInt(arr[i].goodsNum);
+							copy += int1;
+							arr[i].goodsNum = copy;
+							arr[i].goodsSum += goods.goodsSum;
+							console.log(arr[i].goodsNum);
+						}
+					}
+					Cookies.set('arr', JSON.stringify(arr));
+					if(flag == 0) {
+						arr.push(goods);
+						Cookies.set('arr', JSON.stringify(arr));
+					}
+					console.log(arr.length);
+
+				} else {
+					var newArr = new Array();
+					newArr.push(goods);
+					Cookies.set('arr', JSON.stringify(newArr));
+				}
+			});
+		</script>
+	</body>
+
+</html>

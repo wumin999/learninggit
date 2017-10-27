@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/person.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<style type="text/css">
+			.footer_box ul,
+			li,
+			ol,
+			p {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.footer_box a {
+				color: #333;
+			}
+			
+			.footer_box a:focus {
+				outline: none;
+			}
+			
+			.footer_help a:hover {
+				color: #ea1c50;
+			}
+			
+			.footer_box {
+				color: #1c040e;
+				margin-top: 20px;
+				padding-top: 20px;
+				background: #fff;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.common_wrapper,
+			.wrap {
+				width: 1186px;
+				margin: 0 auto;
+			}
+			
+			.footer_help {
+				width: 1200px;
+				margin-bottom: 20px;
+				display: inline-block;
+				padding-left: 0;
+			}
+			
+			.footer_help .dilan_logo {
+				width: 102px;
+				height: 54px;
+				line-height: 54;
+				overflow: hidden;
+				background: url("img/dilan-logo.png") no-repeat;
+				float: left;
+				margin-top: 15px;
+				margin-right: 20px;
+			}
+			
+			.footer_help ul {
+				background: url("img/addorder.png") no-repeat;
+				display: inline-block;
+			}
+			
+			.footer_help li {
+				width: 156px;
+				float: left;
+				padding: 5px 0 0 45px;
+				display: inline-block;
+			}
+			
+			.footer_help li p {
+				line-height: 26px;
+				font-size: 12px;
+			}
+			
+			.policy {
+				background: #f9f9f9;
+				border-top: 1px solid #e9e8e8;
+				padding: 0 0 12px;
+				text-align: center;
+				padding: 10px 0;
+			}
+			
+			.policy li {
+				font-size: 14px;
+				color: #1c040e;
+				display: inline;
+			}
+			
+			.policy li a {
+				display: inline-block;
+				color: #1c040e;
+				padding: 0 20px;
+				font-size: 14px;
+				letter-spacing: 0px;
+				vertical-align: top;
+			}
+			
+			.copyright {
+				color: #9e9a9c;
+				position: relative;
+				overflow: hidden;
+				line-height: 18px;
+				letter-spacing: 0px;
+				text-align: center;
+			}
+			
+			.copyright p {
+				line-height: 23px;
+			}
+			
+			.copyright a {
+				color: #9e9a9c;
+			}
+			
+			.paylogo {
+				text-align: center;
+				margin-top: 10px;
+				height: 25px;
+				background: url("img/paylogo.png") no-repeat center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="head_top">
+			<ul class="container clearfix">
+				<li class="fl">hi~唯美美妆欢迎爱美的你~！</li>
+				<li class="fl">
+					<a href="log.html">马上登录</a>
+				</li>
+				<li class="line fl">|</li>
+				<li class="fl">
+					<a href="resiger.html">立即注册</a>
+				</li>
+				<li class="fr">
+					<a href="welcome.html">个人中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">帮助中心</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">品牌入驻</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">开放平台</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="fr">
+					<a href="help.html">隐私条款</a>
+				</li>
+				<li class="line fr">|</li>
+				<li class="app fr relative">
+					<a href="#">
+						<img src="img/icon_app.png" /> 手机唯美美妆
+					</a>
+					<div class="app_phone">
+						<span class="app_arrow"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--logo&搜索框-->
+		<div class="head">
+			<div class="container clearfix">
+				<!--logo-->
+				<div class="logo fl">
+					<a href="index.html">
+						<span class="l_name">唯美美妆</span>
+						<span class="l_website">VMEI.COM</span>
+					</a>
+				</div>
+				<!--搜索框-->
+				<div class="search fl clearfix">
+					<form class="clearfix" autocomplete="off" action="/products" method="get" id="topSearchBar">
+						<input type="hidden" name="nid" value="">
+						<div class="search-table ser_all fl clearfix">
+							<span class="cur fl">
+                        		<div class="search_icon"></div>
+          					</span>
+							<div class="list">
+								<ul>
+									<li>
+										<a name="all">全部</a>
+									</li>
+									<li>
+										<a name="all">护肤</a>
+									</li>
+									<li>
+										<a name="all">彩妆</a>
+									</li>
+									<li>
+										<a name="all">香水</a>
+									</li>
+									<li>
+										<a name="all">身体护理</a>
+									</li>
+									<li>
+										<a name="all">洗发护发</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<span class="txt fl" style="position: relative;">
+							<input type="text" x-webkit-speech="" x-webkit-grammar="builtin:translate" autocomplete="off" data-default="香水" name="keyword" value="">
+						</span>
+						<span class="searchBtn fl"><input type="submit" value=""></span>
+					</form>
+					<div class="top_search">
+						<a title="" href="ProductList0.html">保湿</a>
+						<a title="" href="ProductList1.html">兰蔻</a>
+						<a title="" href="ProductList2.html">雅诗兰黛</a>
+						<a title="" href="ProductList2.html">控油</a>
+						<a title="" href="ProductList0.html">去角质</a>
+						<a title="" href="ProductList1.html">防晒</a>
+						<a title="" href="ProductList2.html">减肥</a>
+						<a title="" href="ProductList0.html">脱毛</a>
+					</div>
+					<div id="bigAutocompleteContent" class="searchBox"></div>
+				</div>
+				<!--购物车-->
+				<div class="shop fr clearfix relative">
+					<a href="shopping_cart.html" class="shop-bag relative fl">
+						<span><img src="img/gwc.png"></span>
+						<span class="cart_hover">购物袋 (0)</span>
+						<span>：</span>
+						<span class="bag_precie">￥0.00</span>
+						<span class="bag_tips"></span>
+					</a>
+					<div class="gwc-cont">
+						<div class="mycart_popup">
+							<div class="tip">购物车暂无商品<br>快去挑选自己钟爱的商品吧~~</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div class="hNav_box">
+			<div class="hNav container">
+				<ul class="nav_title clearfix">
+					<li class="fl">
+						<a href="index.html" class="title">首页</a>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">护肤</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">卸妆</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">洁面</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面膜</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">面霜</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">彩妆</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">粉底</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">隔离</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">遮瑕</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眉笔</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">眼线</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美唇</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList2.html" class="title">香水</a>
+						<dl>
+							<dd>
+								<a href="ProductList2.html">香水EDP</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">淡香水EDT</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">固体香水</a>
+							</dd>
+							<dd>
+								<a href="ProductList2.html">香体乳</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList0.html" class="title">身体护理</a>
+						<dl>
+							<dd>
+								<a href="ProductList0.html">沐浴用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">身体护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">纤维护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">手足部护理</a>
+							</dd>
+							<dd>
+								<a href="ProductList0.html">脱毛用品</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl relative">
+						<a href="ProductList1.html" class="title">洗发护发</a>
+						<dl>
+							<dd>
+								<a href="ProductList1.html">洗发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">护发</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">美发用品</a>
+							</dd>
+							<dd>
+								<a href="ProductList1.html">烫发染发</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<div class="com_left fl">
+				<div class="header_slider relative">
+					<div class="header_box">
+						<span class="kuang"></span>
+						<span><img src="img/default_face.png"/></span>
+					</div>
+					<div class="name">
+						<h3>13287809848</h3>
+					</div>
+					<div class="person_info">
+						<p><span>会员等级：</span><b></b></p>
+						<p>
+							<a href="myIntegral.html"><span>积分：</span>0</a>
+						</p>
+						<p>
+							<a href="redPacket.html"><span>红包：</span>0</a>
+						</p>
+						<p>
+							<a href="myCoupon.html"><span>优惠券：</span>0</a>
+						</p>
+					</div>
+				</div>
+				<div class="slider_hd">
+					<div class="category_slider">
+						<ul>
+							<li>
+								<dl>
+									<dt>我的小思</dt>
+									<dd>
+										<a href="welcome.html">欢迎页</a>
+									</dd>
+									<dd>
+										<a href="myOrder.html">我的订单</a>
+									</dd>
+									<dd>
+										<a href="myIntegral.html">我的积分</a>
+									</dd>
+									<dd>
+										<a href="shopEvaluate.html">商品评价</a>
+									</dd>
+									<dd>
+										<a href="myNews.html">我的消息</a>
+									</dd>
+									<dd>
+										<a href="myLeaveword.html">我的留言</a>
+									</dd>
+									<dd>
+										<a href="shopConsult.html">商品咨询</a>
+									</dd>
+									<dd>
+										<a href="myCollect.html">我的收藏</a>
+									</dd>
+									<dd>
+										<a href="myCoupon.html">我的优惠券</a>
+									</dd>
+									<dd>
+										<a href="redPacket.html">我的红包</a>
+									</dd>
+									<dd>
+										<a href="close.html">我的分成</a>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>管理个人账户</dt>
+									<dd>
+										<a href="myAccount.html">账户设置</a>
+									</dd>
+									<dd>
+										<a href="safeCenter.html">安全中心</a>
+									</dd>
+									<dd>
+										<a href="changePassword.html">修改密码</a>
+									</dd>
+									<dd>
+										<a href="payCenter.html">充值中心</a>
+									</dd>
+									<dd>
+										<a href="address.html">收货地址管理</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="com_right fr">
+				<div class="crumb">
+					<ul>
+						<li class="home">
+							<a href="index.html"></a>
+						</li>
+						<li class="step_arrow"></li>
+						<li>
+							<a href="welcome.html">我的小思</a>
+						</li>
+						<li class="step_arrow"></li>
+						<li>收货地址管理</li>
+					</ul>
+				</div>
+				<div class="my_account">
+					<div class="account_title">
+						<h2>收货地址管理</h2>
+					</div>
+					<div class="my_account_minute">
+						<div class="address_title">
+							输入新的收货地址
+						</div>
+						<form action="" method="post" class="address_form">
+							<div class="clearfix address_area clearfix">
+								<span style="color: red; padding-top: 3px;">*</span><span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+								<select class="select" name="country">
+									<option value="0">国家/地区</option>
+									<option value="1">中国大陆</option>
+									<option value="3410">香港</option>
+									<option value="3411">澳门</option>
+									<option value="3412">台湾</option>
+									<option value="3409">美国</option>
+								</select>
+								<select class="select" name="province">
+									<option value="0">省份</option>
+								</select>
+								<select class="select" name="city">
+									<option value="0">直辖市</option>
+								</select>
+								<select class="select" name="districts">
+									<option value="0">区/县</option>
+								</select>
+							</div>
+							<div class="address_street">
+								<span style="color: red; padding-top: 2px;">*</span><span>&nbsp;街&nbsp;道&nbsp;地&nbsp;址：</span>
+								<textarea id="text_location" name="" rows="" cols="" placeholder="不需要重复填写省市区，必须大于5个字符，小于120个字符"></textarea>
+							</div>
+							<div class="address_street">
+								<span style="color: red; padding-top: 2px;">*</span><span>收货人姓名：</span>
+								<input type="text" name="" id="text_name" value="" />
+							</div>
+							<div class="address_street">
+								<span>&nbsp;&nbsp;邮&nbsp;政&nbsp;编&nbsp;码：</span>
+								<input type="text" name="" id="zip" value="" />
+							</div>
+							<div class="address_street">
+								<span style="color: red; padding-top: 2px;">*</span><span>联&nbsp;系&nbsp;电&nbsp;话：</span>
+								<input type="text" name="" id="text_mobile" value="" />
+							</div>
+							<div class="address_street">
+								<span>&nbsp;&nbsp;身&nbsp;&nbsp;份&nbsp;&nbsp;证&nbsp;&nbsp;：</span>
+								<input type="text" name="" id="" value="" />
+							</div>
+							<input type="button" name="" id="" value="保存" class="address_btn" />
+						</form>
+						<div class="address_save">
+							已保存的收货地址
+						</div>
+						<div class="address_list">
+							<div class="th_header clearfix">
+								<span style="width: 85px;">收货人</span>
+								<span style="width: 335px;">所在地区地址</span>
+								<span style="width: 70px;">邮编</span>
+								<span style="width: 100px;">电话/手机号码</span>
+								<span style="width: 80px;text-align: center;">操作</span>
+								<span style="width: 115px; text-align: center;">默认</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_box clearfix">
+			<div class="wrap clearfix">
+				<div class="footer_help">
+					<a class="dilan_logo" href="/">logo</a>
+					<ul>
+						<li>
+							<p><strong>帮助FAQ</strong></p>
+							<p>
+								<a href="help.html" target="_blank">注册/登录</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">购物流程</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">售后服务</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">积分说明</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">会员等级</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>支付服务</strong></p>
+							<p>
+								<a href="help.html" target="_blank">在线支付</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">货到付款</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">常见问题</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">微信关注</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>配送服务</strong></p>
+							<p>
+								<a href="help.html" target="_blank">配送方式</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">配送时间</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>关于我们</strong></p>
+							<p>
+								<a href="help.html" target="_blank">关于唯美美妆</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">申请加入唯美美妆</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">商务合作</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">使用条款及法律资料</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">个人隐私和安全保障</a>
+							</p>
+						</li>
+						<li>
+							<p><strong>订单问题</strong></p>
+							<p>
+								<a href="help.html" target="_blank">如何修改订单</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">如何取消订单</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">商品降价如何处理</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">为何订单被关闭</a>
+							</p>
+							<p>
+								<a href="help.html" target="_blank">订单取消成功为何无退款</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="policy clearfix">
+				<div class="wrap">
+					<ul class="clearfix">
+						<li>
+							<a href="help.html" target="_blank" title="关于我们">关于我们</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="友情链接">友情链接</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="商家入驻">商家入驻</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="开放平台">开放平台</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="加入我们">加入我们</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="商务合作">商务合作</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="隐私条例">隐私条例</a>|</li>
+						<li>
+							<a href="help.html" target="_blank" title="使用条款">使用条款</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						<p>Copyright © 2006 - 2016
+							<a href="help.html">南京思芙美网络科技有限公司 VMEI.COM</a> 保留一切权利 商业登记证号 : 62052243-000</p>
+						<p class="paylogo"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".address_btn").click(function() {
+				var name = $("input[id='text_name']").val();
+				var add1 = $("select[name='country']").find("option:selected").text();
+				var add2 = $("select[name='province']").find("option:selected").text();
+				var add3 = $("select[name='city']").find("option:selected").text();
+				var add4 = $("select[name='districts']").find("option:selected").text();
+				var add5 = $("textarea[id='text_location']").val();
+				var tel = $("input[id='text_mobile']").val();
+				var zip = $("input[id='zip']").val();
+				var html = $('<div class="tr_list clearfix"><span style="width: 85px;">' + name + '</span><span style="width: 335px;">' +
+					add1 + ',' + add2 + ',' + add3 + ',' + add4 + ',' + add5 + '</span><span style="width: 70px;">' +
+					zip + '</span><span style="width: 100px;">' + tel + '</span><span class="del" style="width: 80px;text-align: center;"><a style="cursor: pointer;">删除</a></span>' +
+					'<span style="width: 115px; text-align: center;"><a style="cursor: pointer;">设为默认地址</a></span></div>')
+				$(".address_list").append(html);
+				$(".tr_list").on("click", ".del", function() {
+					$(this).parent(".tr_list").remove();
+				})
+			})
+
+		})
+	</script>
+
+</html>

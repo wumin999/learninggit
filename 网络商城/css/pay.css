@@ -1,0 +1,418 @@
+@charset "utf-8";
+.shoppingCart {
+	margin: 20px 0 40px;
+}
+
+.schedule {
+	width: 900px;
+	height: 29px;
+	background: url(../img/shopping_steps.png) no-repeat;
+	margin-bottom: 20px;
+}
+
+.schedule li.selected {
+	color: #fff;
+}
+
+.schedule li {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #737d8c;
+	float: left;
+}
+
+.schedule01 {
+	background-position: 0 -120px;
+}
+
+.mycar_hd {
+	margin: 40px auto;
+	width: 900px;
+}
+
+.page-pay #content {
+	width: 780px;
+	margin: 15px auto;
+	padding: 30px 90px;
+	border: solid 5px #d91966;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.scc_info h2 {
+	color: #090;
+}
+
+.infobox h2 {
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: normal;
+	position: relative;
+}
+
+.scc_info h2:before {
+	background: url(../img/succeed.png) no-repeat;
+}
+
+.pay_detail {
+	margin: 10px 0;
+	color: #999;
+}
+
+.pay_detail a.other {
+	padding: 4px 10px;
+	border: solid 1px #ccc;
+	box-shadow: inset 0 10px 10px #fff;
+	background: #eee;
+}
+
+.pay_detail .other {
+	float: right;
+}
+
+.pay_detail .impor {
+	font-size: 16px;
+	color: #4062A7;
+}
+
+.pay_detail .impor strong {
+	font-size: 18px;
+	color: #f60;
+}
+
+.order_payment {
+	padding: 0 0 20px;
+}
+
+.order_payment .info {
+	padding: 20px 0;
+	color: #c00;
+	position: relative;
+}
+
+.order_payment .info:before {
+	width: 20px;
+	height: 20px;
+	content: "";
+	display: block;
+	position: absolute;
+	left: -25px;
+	background: url(../img/icon01.png) no-repeat -87px -75px;
+}
+
+.order_payment h3 {
+	margin-bottom: 5px;
+}
+
+.step_radio.selected {
+	border-color: #d91864;
+}
+
+.pay_method .step_radio {
+	display: inline;
+	float: left;
+	background: #fff;
+	border: 2px solid #E4E4E4;
+	margin: 0 16px 15px 0;
+	width: 132px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+
+
+.step_radio label em {
+	padding-left: 38px;
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+}
+
+.step_radio input {
+	display: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	box-sizing: border-box;
+}
+
+.step_radio.selected .arrow {
+	display: block;
+}
+
+.step_radio .arrow {
+	display: none;
+	background: url(../img/icon01.png) no-repeat -37px -12px;
+	height: 17px;
+	width: 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.order_payment .selected_bank a {
+	color: #4062A7;
+	text-decoration: underline;
+}
+
+.payment_list {
+	margin: 20px auto;
+	padding: 15px 0 0 15px;
+	border: solid 1px #ccc;
+	display: none;
+}
+
+.btn-orange {
+	margin: auto;
+	padding: 0 30px;
+	font-size: 16px;
+	line-height: 40px;
+	background: #d91864;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	display: inline-block;
+}
+
+.order_payment .bottomcontent {
+	margin-top: 50px;
+	clear: both;
+	color: #666;
+}
+
+.order_payment .bottomcontent .info_tips {
+	margin-top: 10px;
+	padding: 20px;
+	border-top: dotted 1px #ccc;
+	clear: both;
+	display: block;
+}
+
+.pay_method h3 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 30px;
+	padding: 0 0 20px 0;
+	color: #f22867;
+}
+
+.pay_method .step_radio {
+	display: inline;
+	float: left;
+	background: #fff;
+	border: 2px solid #E4E4E4;
+	cursor: pointer;
+	margin: 0 16px 15px 0;
+	position: relative;
+	width: 132px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.pay_method .step_radio:hover {
+	border-color: #d91864;
+}
+
+.pay_method .step_radio.selected {
+	border-color: #d91864;
+}
+
+.pay_method .alipayForex {
+	width: 32px;
+	height: 32px;
+	background-position: 0 -38px;
+	position: absolute;
+	top: 4px;
+	left: 8px;
+}
+.pay_icon{
+	display: inline-block;
+	background: url(../img/pay-type.jpg) no-repeat;
+}
+
+.pay_method .step_radio label {
+	margin: 4px 10px;
+	padding: 7px 0;
+	
+}
+
+.step_radio label span {
+	padding-left: 38px;
+	font-size: 14px;
+}
+.step_radio.selected .arrow {
+	display: block;
+}
+.step_radio .arrow {
+	display: none;
+	background: url(../img/icon01.png) no-repeat -37px -11px;
+	height: 17px;
+	width: 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.step_radio input {
+	display: none;
+}
+
+.pay_method .step_radio .wx_pay {
+	width: 32px;
+	height: 32px;
+	background-position: 0 0;
+	position: absolute;
+	top: 5px;
+	left: 8px;
+}
+
+.pay_method .step_radio .paypal {
+	width: 90px;
+	height: 32px;
+	background-position: 10px -155px;
+	position: absolute;
+	top: 4px;
+	left: 10px;
+}
+
+.step_radio .paypal span {
+	padding-left: 100px;
+	height: 40px;
+	line-height: 40px;
+}
+
+
+.page-pay #content {
+	width: 780px;
+	margin: 15px auto;
+	padding: 30px 90px;
+	border: solid 5px #d91966;
+	border-radius: 15px;
+	background-color: #fff;
+}
+.footer_box ul,
+li,
+ol,
+p {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer_box a {
+	color: #333;
+}
+
+.footer_box a:focus {
+	outline: none;
+}
+
+.footer_help a:hover {
+	color: #ea1c50;
+}
+
+.footer_box {
+	color: #1c040e;
+	margin-top: 20px;
+	padding-top: 20px;
+	background: #fff;
+}
+
+.clear {
+	clear: both;
+}
+
+.common_wrapper,
+.wrap {
+	width: 1186px;
+	margin: 0 auto;
+}
+
+.footer_help {
+	width: 1200px;
+	margin-bottom: 20px;
+	display: inline-block;
+	padding-left: 0;
+}
+
+.footer_help .dilan_logo {
+	width: 102px;
+	height: 54px;
+	line-height: 54;
+	overflow: hidden;
+	background: url("../img/dilan-logo.png") no-repeat;
+	float: left;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.footer_help ul {
+	background: url("../img/addorder.png") no-repeat;
+	display: inline-block;
+}
+
+.footer_help li {
+	width: 156px;
+	float: left;
+	padding: 5px 0 0 45px;
+	display: inline-block;
+}
+
+.footer_help li p {
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.policy {
+	background: #f9f9f9;
+	border-top: 1px solid #e9e8e8;
+	padding: 0 0 12px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.policy li {
+	font-size: 14px;
+	color: #1c040e;
+	display: inline;
+}
+
+.policy li a {
+	display: inline-block;
+	color: #1c040e;
+	padding: 0 20px;
+	font-size: 14px;
+	letter-spacing: 0px;
+	vertical-align: top;
+}
+
+.copyright {
+	color: #9e9a9c;
+	position: relative;
+	overflow: hidden;
+	line-height: 18px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.copyright p {
+	line-height: 23px;
+}
+
+.copyright a {
+	color: #9e9a9c;
+}
+
+.paylogo {
+	text-align: center;
+	margin-top: 10px;
+	height: 25px;
+	background: url("../img/paylogo.png") no-repeat center;
+}

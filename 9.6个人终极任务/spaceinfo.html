@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/spaceinfo.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu-bg.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<span><a href="index-2.html"><img width="50%" height="50%" src="img/1493969122709.png"/></a></span>
+			<span id="close" class="close">
+				<div id="up"></div>
+				<div id="down"></div>
+			</span>
+		</div>
+		<div class="menu_bg">
+			<div style="position: absolute; left: 50%;margin-left: -50px;margin-top: 80px;">
+				<a href="index.html">
+					<img height="40" src="img/1493969122709.png" />
+				</a>
+			</div>
+			<div class="menu_bg_word">
+				<ul>
+					<li>
+						<a href="index-2.html">
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="style.html">
+							精品主题
+						</a>
+					</li>
+					<li>
+						<a href="guide.html">
+							精选案例
+						</a>
+					</li>
+					<li style="position: relative;">
+						<a href="#">
+							关于 <span style="width: 10px;display: inline-block;"><img width="100%" src="img/up.png"/></span>
+						</a>
+						<dd class="s_list">
+							<dl>
+								<a href="abouts.html">
+									关于
+								</a>
+							</dl>
+							<dl>
+								<a href="team.html">
+									核心团队
+								</a>
+							</dl>
+
+						</dd>
+					</li>
+					<li>
+						<a href="example.html">
+							页面示例
+						</a>
+					</li>
+					<li>
+						<a href="content.html">
+							联系我们
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="container">
+			<div class="title">
+				<b>边走边吃，边走边爱</b>
+			</div>
+			<div class="time">
+				2017-06-12
+			</div>
+			<div class="text">
+				<p>我是很喜欢上海这座城市的，可以给我这样笨笨的人灵感和活力，在步入这座城市之前，我觉得自己是一个被封在罐头的人。我只会老老实实的读书，老老实实的逃课，老老实实的躺宿舍吃着凉面摊儿上买来的酒酿小丸子。</p>
+				<p>在上海独自生活之后，我好像明白了为什么我并没有真的被绑住，却觉得不自由。现在，我会在夏日的周末，去尝试各种好玩的酒酿吃法，吃的快乐，也是成长的印记。这里分享两种我最喜欢的酒酿吃法</p>
+			</div>
+			<div class="space_list">
+				<ul class="clearfix">
+					<li>
+						<div class="img">
+							<img style="width: 100%;" src="img/1497874338323.jpg" />
+						</div>
+						<div class="img_title">
+							<b>A、好的旅行如修习一个课程</b>
+						</div>
+						<div class="img_txt">
+							<p>我们曾一起踏上南极点</p>
+							<p>也曾一起在老欧洲的艺术、建筑、美食中流连忘返</p>
+							<p>成为中国最早到达的非职业探险家</p>
+							<p>吃红肉如猪肉、牛肉时适合点红酒</p>
+						</div>
+					</li>
+					<li>
+						<div class="img">
+							<img style="width: 100%;" src="img/1497874484221.jpg" />
+						</div>
+						<div class="img_title">
+							<b>B、精读世界，因成长、爱，与信仰之名</b>
+						</div>
+						<div class="img_txt">
+							<p>把空间变成梦境，把时间变成回忆</p>
+							<p>把空间变成梦境，把时间变成回忆</p>
+							<p>不管是你少年时代阅读格瓦拉的激情</p>
+							<p>还是垂暮之年去海峡那边重温青春的民谣</p>
+						</div>
+					</li>
+					<li style="border: none;">
+						<div class="img">
+							<img style="width: 100%;" src="img/1497874569298.jpg" />
+						</div>
+						<div class="img_title">
+							<b>C、把时间变成回忆</b>
+						</div>
+						<div class="img_txt">
+							<p>我们于历史，于人文，于自然中...</p>
+							<p>发掘最新鲜的旅行主题，与你一起</p>
+							<p>诠释生活中各个阶段各种爱，无论是夫妻之爱，子女之爱</p>
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var x = 0;
+		$('#close').click(function() {
+			if(x == 0) {
+
+				$('.menu_bg').stop().animate({
+					right: '0',
+				}, 500)
+				x = 1;
+			} else {
+
+				$('.menu_bg').stop().animate({
+					right: '-100%',
+				}, 500)
+				x = 0;
+			}
+		})
+	</script>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/maninfo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menu-bg.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<span><a href="index-2.html"><img width="50%" height="50%" src="img/1493969122709.png"/></a></span>
+			<span id="close" class="close">
+				<div id="up"></div>
+				<div id="down"></div>
+			</span>
+		</div>
+		<div class="menu_bg">
+			<div style="position: absolute; left: 50%;margin-left: -50px;margin-top: 80px;">
+				<a href="index.html">
+					<img height="40" src="img/1493969122709.png" />
+				</a>
+			</div>
+			<div class="menu_bg_word">
+				<ul>
+					<li>
+						<a href="index-2.html">
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="style.html">
+							精品主题
+						</a>
+					</li>
+					<li>
+						<a href="guide.html">
+							精选案例
+						</a>
+					</li>
+					<li style="position: relative;">
+						<a href="#">
+							关于 <span style="width: 10px;display: inline-block;"><img width="100%" src="img/up.png"/></span>
+						</a>
+						<dd class="s_list">
+							<dl>
+								<a href="abouts.html">
+									关于
+								</a>
+							</dl>
+							<dl>
+								<a href="team.html">
+									核心团队
+								</a>
+							</dl>
+
+						</dd>
+					</li>
+					<li>
+						<a href="example.html">
+							页面示例
+						</a>
+					</li>
+					<li>
+						<a href="content.html">
+							联系我们
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="info clearfix">
+			<div class="pic fl">
+				<img style="width: 100%;" src="img/1497863859152.jpg"/>
+			</div>
+			<div class="maninfo fl">
+				<div class="name">芦溪诗</div>
+				<div class="work">运营总监/PM</div>
+				<p style="margin-top: 40px;">The judges</p>
+				<p>- station host computer desktop wallpaper cool Sibutramine furniture design activity design of judges</p>
+				<p>- 2014-2015 Chinese Web Design Alliance design panel</p>
+				<p style="margin-top: 40px;">Publishing</p>
+				<p>- one of the Photoshop creative books, a senior designer, and a senior designer.</p>
+				<p style="margin-top: 40px;">Share</p>
+				<p>- invited to Fetion design guidance lectures</p>
+				<p>- invited to quack video community design guidance lectures</p>
+				<p>- invited to the creative workshop to design and guide the lecture</p>
+				<p style="margin-top: 40px;">Lecture</p>
+				<p>Zeng Frasers web designer senior class instructor</p>
+				<p>Other</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var x = 0;
+		$('#close').click(function() {
+			if(x == 0) {
+
+				$('.menu_bg').stop().animate({
+					right: '0',
+				}, 500)
+				x = 1;
+			} else {
+
+				$('.menu_bg').stop().animate({
+					right: '-100%',
+				}, 500)
+				x = 0;
+			}
+		})
+	</script>
+</html>

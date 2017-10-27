@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/abouts.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu-bg.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="position: relative;">
+		<div class="header">
+			<span><a href="index-2.html"><img width="50%" height="50%" src="img/1493969122709.png"/></a></span>
+			<span id="close" class="close">
+				<div id="up"></div>
+				<div id="down"></div>
+			</span>
+		</div>
+		<div class="menu_bg">
+			<div style="position: absolute; left: 50%;margin-left: -50px;margin-top: 80px;">
+				<a href="index.html">
+					<img height="40" src="img/1493969122709.png" />
+				</a>
+			</div>
+			<div class="menu_bg_word">
+				<ul>
+					<li>
+						<a href="index-2.html">
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="style.html">
+							精品主题
+						</a>
+					</li>
+					<li>
+						<a href="guide.html">
+							精选案例
+						</a>
+					</li>
+					<li style="position: relative;">
+						<a href="#">
+							关于 <span style="width: 10px;display: inline-block;"><img width="100%" src="img/up.png"/></span>
+						</a>
+						<dd class="s_list">
+							<dl>
+								<a href="abouts.html">
+									关于
+								</a>
+							</dl>
+							<dl>
+								<a href="team.html">
+									核心团队
+								</a>
+							</dl>
+
+						</dd>
+					</li>
+					<li>
+						<a href="example.html">
+							页面示例
+						</a>
+					</li>
+					<li>
+						<a href="content.html">
+							联系我们
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="abouts_bg">
+		</div>
+		<div class="abouts_content">
+			<div class="container">
+				<div class="abouts_content_word1">
+					关于
+				</div>
+				<div class="abouts_content_word2">
+					ABOUT US
+				</div>
+				<div class="abouts_content_word3">
+					充满动感的健身中心是放松身心的首选之处，到静谧的水疗中心享受一次专业的按摩，令您神采焕发 <br />舒适宜人的大堂吧和彰显不凡的行政酒廊更是您品茗啜饮，商务会友的惬意空间，注重客人居住体验的所有细节
+				</div>
+				<div class="abouts_content_pic">
+					<img width="100%" src="img/146700459479.jpg" />
+				</div>
+				<div class="abouts_content_word4">
+					<strong>Website只为更好的极速建站平台</strong>
+				</div>
+				<div class="abouts_content_word3">
+					多间连接大型日式热水浴池和蒸汽室的水疗护理室，一个可享城市景观的30米恒温泳<br /> 晴空万里时还可欣赏富士山的壮美景色，同时提供有各色精致菜肴，满足挑剔的味蕾。 <br /> 为各类活动庆典提供合适场地，无论是生日宴、周年庆、庆功宴或是开幕式，均竭诚服
+				</div>
+				<div class="clearfix" style="padding-top: 100px; padding-bottom: 200px;">
+					<div class="fl" style="width: 350px; padding: 0 5px;">
+						<img width="100%" src="img/1496900050576.jpg" />
+						<div class="abouts_content_pic2_word">
+							吃遍全世界的美味，你们总在问爱情保鲜的秘诀是什么<br />带她上路吧，答案就在旅途中,一定会在世界上最美丽的 <br />...
+						</div>
+					</div>
+					<div class="fl" style="width: 350px; padding: 0 5px;">
+						<img width="100%" src="img/1496900163345.jpg" />
+						<div class="abouts_content_pic2_word">
+							雪山的风光灵魂归处这就是新西兰国内最早做出境定制<br />旅游的平台之一，辐射34个国家、432座城市 ...
+						</div>
+					</div>
+					<div class="fl" style="width: 350px; padding: 0 5px;">
+						<img width="100%" src="img/1496904928751.jpg" />
+						<div class="abouts_content_pic2_word">
+							月色，雪色，你是人间第三种绝色/富有变化的地形及超高透明度的海水令潜水族们身手修养身心 ...
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript">
+			var x = 0;
+			$('#close').click(function() {
+				if(x == 0) {
+
+					$('.menu_bg').stop().animate({
+						right: '0',
+					}, 500)
+					x = 1;
+				} else {
+
+					$('.menu_bg').stop().animate({
+						right: '-100%',
+					}, 500)
+					x = 0;
+				}
+			})
+		</script>
+
+	</body>
+
+</html>

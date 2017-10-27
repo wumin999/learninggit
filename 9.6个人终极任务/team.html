@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/team.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu-bg.css" />
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<span><a href="index-2.html"><img width="50%" height="50%" src="img/1493969122709.png"/></a></span>
+			<span id="close" class="close">
+				<div id="up"></div>
+				<div id="down"></div>
+			</span>
+		</div>
+		<div class="menu_bg">
+			<div style="position: absolute; left: 50%;margin-left: -50px;margin-top: 80px;">
+				<a href="index.html">
+					<img height="40" src="img/1493969122709.png" />
+				</a>
+			</div>
+			<div class="menu_bg_word">
+				<ul>
+					<li>
+						<a href="index-2.html">
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="style.html">
+							精品主题
+						</a>
+					</li>
+					<li>
+						<a href="guide.html">
+							精选案例
+						</a>
+					</li>
+					<li style="position: relative;">
+						<a href="#">
+							关于 <span style="width: 10px;display: inline-block;"><img width="100%" src="img/up.png"/></span>
+						</a>
+						<dd class="s_list">
+							<dl>
+								<a href="abouts.html">
+									关于
+								</a>
+							</dl>
+							<dl>
+								<a href="team.html">
+									核心团队
+								</a>
+							</dl>
+							
+						</dd>
+					</li>
+					<li>
+						<a href="example.html">
+							页面示例
+						</a>
+					</li>
+					<li>
+						<a href="content.html">
+							联系我们
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="team_bg">
+		</div>
+		<div class="team_content">
+			<div class="container">
+				<div class="team_content_word1">
+					核心团队
+				</div>
+				<div class="team_content_word2">
+					Team
+				</div>
+				<ul class="team_list clearfix">
+					<li>
+						<div style="width: 290px;height: 290px; position: relative; overflow: hidden;">
+							<img style="width: 100%;" src="img/1497793881189.jpg" />
+							<div class="add">
+								+
+							</div>
+						</div>
+						<p class="name">芦溪诗</p>
+						<p class="work">运营总监/PM</p>
+						<p class="info">设计界的“设计鬼才”从题材到表现方式都引起了极大的福布斯中国最具潜力，每一个产品都是我们精心的作品，每一种设计都是我们细心的思考，全球200+原创旅行方案 ...</p>
+					</li>
+					<li>
+						<div style="width: 290px;height: 290px; position: relative; overflow: hidden;">
+							<img style="width: 100%;" src="img/1497847882282.jpg" />
+							<div class="add">
+								+
+							</div>
+						</div>
+						<p class="name">徐晨</p>
+						<p class="work">资深旅行定制师</p>
+						<p class="info">2012, the world's most authoritative Awwwards selected 365 global best CSS website, through the international assessment of the layers of screening, excellent art guest (UElike) </p>
+					</li>
+					<li>
+						<div style="width: 290px;height: 290px; position: relative; overflow: hidden;">
+							<img style="width: 100%;" src="img/1497847975875.jpg" />
+							<div class="add">
+								+
+							</div>
+						</div>
+						<p class="name">胡如珊</p>
+						<p class="work">资深室内设计师</p>
+						<p class="info">The world's leading electronic design journal NEWWEBPICK recommended the designer of the electronic magazine (twenty-ninth) China's design industry Youth Award winners and awarded</p>
+					</li>
+					<li>
+						<div style="width: 290px;height: 290px; position: relative; overflow: hidden;">
+							<img style="width: 100%;" src="img/1488252248399.jpg" />
+							<div class="add">
+								+
+							</div>
+						</div>
+						<p class="name">连君曼</p>
+						<p class="work">室内设计师</p>
+						<p class="info">设计界的“设计鬼才”从题材到表现方式都引起了极大的福布斯中国最具潜力，每一个产品都是我们精心的作品，每一种设计都是我们细心的思考，全球200+原创旅行方案 ...</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var x=0;
+			$('#close').click(function() {
+				if(x == 0) {
+					
+					$('.menu_bg').stop().animate({
+						right: '0',
+					}, 500)
+					x = 1;
+				} else {
+					
+					$('.menu_bg').stop().animate({
+						right: '-100%',
+					}, 500)
+					x = 0;
+				}
+			})
+		</script>
+	</body>
+
+</html>

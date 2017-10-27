@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Youhuiquan </title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/youhuiquan.css" />
+	</head>
+
+	<body>
+		<div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+			<ul class="am-tabs-nav am-nav am-nav-tabs am-avg-sm-3 am-thumbnails cate">
+				<li class="am-active am-thumbnail">
+					<a href="javascript: void(0)">未使用</a>
+				</li>
+				<li class="am-thumbnail">
+					<a href="javascript: void(0)">已使用</a>
+				</li>
+				<li class="am-thumbnail">
+					<a href="javascript: void(0)">已过期</a>
+				</li>
+
+			</ul>
+
+			<div class="am-tabs-bd goods_box">
+				<div class="am-tab-panel am-active">
+					<div class="sysm">
+						<img width="15.5px" height="15.5px" src="1img/now.png" alt="" /><span>优惠券使用说明</span>
+					</div>
+					<div class="coupon">
+						<div class="coupon_left">
+							￥<span class="num1"><b>50</b></span><br />
+							满188元可用
+						</div>
+						<div class="coupon_right">
+							<div class="right_title">
+								新人好礼：全网满188减50元券
+							</div>
+							<div class="right_info">
+								全场商品可用
+							</div>
+							<div class="right_info">
+								使用期限：09/26-10/10
+							</div>
+						</div>
+						<img src="1img/hint.png" alt="" />
+					</div>
+				</div>
+				<div class="am-tab-panel">
+					<div class="coupon2">
+						<div class="coupon_left2">
+							￥<span class="num2"><b>50</b></span><br />
+							满188元可用
+						</div>
+						<div class="coupon_right">
+							<div class="right_title">
+								新人好礼：全网满188减50元券
+							</div>
+							<div class="right_info">
+								全场商品可用
+							</div>
+							<div class="right_info">
+								使用期限：09/26-10/10
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="am-tab-panel">
+					<div class="coupon2">
+						<div class="coupon_left2">
+							￥<span class="num2"><b>50</b></span><br />
+							满188元可用
+						</div>
+						<div class="coupon_right">
+							<div class="right_title">
+								新人好礼：全网满188减50元券
+							</div>
+							<div class="right_info">
+								全场商品可用
+							</div>
+							<div class="right_info">
+								使用期限：09/26-10/10
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script>
+			$(function() {
+				var tabCounter = 0;
+				var $tab = $('#doc-tab-demo-1');
+				var $nav = $tab.find('.am-tabs-nav');
+				var $bd = $tab.find('.am-tabs-bd');
+
+				function addTab() {
+					var nav = '<li><span class="am-icon-close"></span>' +
+						'<a href="javascript: void(0)">标签 ' + tabCounter + '</a></li>';
+					var content = '<div class="am-tab-panel">动态插入的标签内容' + tabCounter + '</div>';
+
+					$nav.append(nav);
+					$bd.append(content);
+					tabCounter++;
+					$tab.tabs('refresh');
+				}
+
+				// 动态添加标签页
+				$('.js-append-tab').on('click', function() {
+					addTab();
+				});
+
+				// 移除标签页
+				$nav.on('click', '.am-icon-close', function() {
+					var $item = $(this).closest('li');
+					var index = $nav.children('li').index($item);
+
+					$item.remove();
+					$bd.find('.am-tab-panel').eq(index).remove();
+
+					$tab.tabs('open', index > 0 ? index - 1 : index + 1);
+					$tab.tabs('refresh');
+				});
+			});
+		</script>
+	</body>
+
+</html>

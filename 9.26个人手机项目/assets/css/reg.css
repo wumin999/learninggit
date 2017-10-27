@@ -1,0 +1,116 @@
+body {
+	background-color: #EEEEEE;
+}
+
+.form {
+	padding-top: 20px;
+	background-color: #FFFFFF;
+}
+
+.am-form-horizontal .am-form-label {
+	padding-top: 0;
+}
+
+.am-form input[type=text] {
+	border: none;
+	border-radius: 0;
+	padding: 5px;
+}
+
+.left_img {
+	vertical-align: middle;
+	padding: 4px 20px;
+}
+
+.am-form-group {
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	margin-left: 20px;
+}
+
+.am-u-sm-10 {
+	padding-left: 0;
+}
+
+.am-form input[type=password] {
+	border: none;
+	border-radius: 0;
+	padding: 5px;
+}
+
+.xian {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.huoqu {
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	background: #008842;
+	outline: none;
+	border: none;
+	line-height: 30px;
+}
+
+.btns {
+	margin-top: 20px;
+	padding: 0 40px;
+	text-align: center;
+}
+
+.left_btn {
+	display: inline-block;
+	width: 60%;
+	height: 40px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #fff;
+	background: #008842;
+}
+
+.xieyi {
+	color: #8d8a8a;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.partners {
+	font-size: 15px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #a0a0a0;
+	margin-top: 38px;
+}
+
+.bottom_logo img {
+	display: inline-block;
+	width: 104px;
+}
+
+#vld-tooltip {
+	position: absolute;
+	z-index: 1000;
+	padding: 5px 10px;
+	background: #008842;
+	min-width: 150px;
+	color: #fff;
+	transition: all 0.15s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+	display: none;
+}
+
+#vld-tooltip:before {
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	content: "";
+	border-width: 0 8px 8px;
+	border-color: transparent transparent #008842;
+	border-style: none inset solid;
+}

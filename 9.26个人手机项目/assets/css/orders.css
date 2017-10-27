@@ -1,0 +1,201 @@
+.goods_box {
+	border: none;
+	margin-top: 40px;
+	background-color: #FFFFFF;
+}
+
+.am-thumbnail {
+	border: none;
+}
+
+.am-thumbnails {
+	margin-left: 0rem;
+	margin-right: 0rem;
+}
+
+.am-nav-tabs>li.am-active>a,
+.am-nav-tabs>li.am-active>a:focus,
+.am-nav-tabs>li.am-active>a:hover {
+	color: #11b57c;
+	background-color: #fff;
+	border: 0px solid #ddd;
+	/*border-bottom: 2px solid #11b57c;*/
+	cursor: default;
+}
+
+.am-nav-tabs>li>a {
+	margin-right: 5px;
+	line-height: 1.6;
+	border: 0px solid transparent;
+	border-radius: 0;
+}
+
+.am-nav>li>a:focus,
+.am-nav>li>a:hover {
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.am-nav-tabs>li>a:hover {
+	border: none;
+}
+
+.am-nav-tabs {
+	border-bottom: none;
+}
+
+.am-nav-tabs>li.am-active {
+	background-color: #fff;
+	color: #11b57c;
+	border-bottom: 1px solid #11b57c;
+	cursor: default;
+}
+
+.cate li {
+	/*color: #333333;*/
+	padding: 6px 8px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.cate li:focus,
+.cate li:hover {
+	background-color: #fff;
+	border-bottom: 1px solid #11b57c;
+}
+
+.am-tabs-bd .am-tab-panel {
+	padding: 4px 18px 15px;
+}
+
+.cate {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 1000000000;
+}
+
+
+/**/
+
+body {
+	background-color: #EEEEEE;
+}
+
+.order {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.order_info p {
+	margin: 4px 0px;
+}
+
+.order_info {
+	float: left;
+}
+
+.number {
+	font-size: 14px;
+	color: #000;
+}
+
+.date {
+	color: #8d8a8a;
+	font-size: 14px;
+}
+
+.state {
+	color: #008842;
+	font-size: 14px;
+	float: right;
+	margin-top: 14px;
+}
+
+.clear {
+	clear: both;
+}
+
+.order_img {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.order_img img {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	margin: 4px;
+}
+
+.jiesuan {
+	font-size: 14px;
+	color: #fb3d3d;
+	margin-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: 4px solid #eee;
+	
+}
+
+.order_btn,
+.order_btn:focus {
+	display: inline-block;
+	width: 72px;
+	height: 28px;
+	margin-left: 47%;
+	background: #fff;
+	color: #008842;
+	border: 1px solid #008842;
+	font-size: 12px;
+}
+
+.am-btn.am-radius {
+	border-radius: 4px;
+}
+.like{
+	margin-top: 10px;
+}
+.pro_price {
+	text-align: left;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.pro_title {
+	text-align: center;
+	font-size: 15px;
+	color: #000000;
+	margin-top: 16px;
+}
+
+.pro_info_name {
+	font-size: 11px;
+	color: #333;
+	text-align: center;
+}
+
+.new_product2 {
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	top: 17px;
+	left: 25px;
+}
+
+.pro_fruits {
+	border-bottom: 6px solid #EEEEEE;
+}
+
+.product_name {
+	font-size: 11px;
+	color: #333;
+	text-align: center;
+}
+.product_price {
+	color: #8d8a8a;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>login</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/login.css" />
+	</head>
+
+	<body>
+		<form class="am-form am-form-horizontal form" id="form-with-tooltip">
+			<fieldset>
+				<div class="am-form-group xian">
+					<label for="doc-ipt-3" class="am-u-sm-2 am-form-label left_img"><img width="18px" height="20px" src="1img/icon_username.png"/></label>
+					<div class="am-u-sm-10">
+						<input class="uer_name" minlength="3" type="text" id="doc-vld-name-2-0" placeholder="输入您的用户名（至少 3 个字符）" required>
+					</div>
+				</div>
+
+				<div class="am-form-group xian">
+					<label for="doc-ipt-pwd-2" class="am-u-sm-2 am-form-label left_img"><img width="18px" height="20px" src="1img/icon_password.png"/></label>
+					<div class="am-u-sm-10">
+						<input type="password" id="doc-vld-pwd-1-0" placeholder="6 位数字的银行卡密码" pattern="^\d{6}$" required data-foolish-msg="把 IQ 卡密码交出来！">
+					</div>
+				</div>
+				<div class="am-form-group xian">
+					<div class="am-u-sm-8">
+						<input type="text" id="doc-ipt-pwd-2" placeholder="请输入验证码" required>
+					</div>
+					<div class="am-u-sm-4">
+						<img src="1img/20170930140020_03.png" />
+					</div>
+				</div>
+
+				<div class="forgetkey">
+					忘记密码？
+				</div>
+				<div class="btns">
+					<button type="submit" class="left_btn">登录</button>
+					<a href="reg.html"><button type="button" class="right_btn">立即注册</button></a>
+				</div>
+			</fieldset>
+		</form>
+		<div class="partners">
+			<p>--------- <b>合作帐号登录</b> ----------</p>
+			<p class="partners_logo"><img src="1img/login-qq.png" /> <img src="1img/login-weibo.png" /></p>
+			<p class="bottom_logo"><img src="1img/yiguo_logo.png" /></p>
+		</div>
+
+		<script src="assets/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script>
+			$(function() {
+				var $form = $('#form-with-tooltip');
+				var $tooltip = $('<div id="vld-tooltip">提示信息！</div>');
+				$tooltip.appendTo(document.body);
+
+				$form.validator();
+
+				var validator = $form.data('amui.validator');
+
+				$form.on('focusin focusout', '.am-form-error input', function(e) {
+					if(e.type === 'focusin') {
+						var $this = $(this);
+						var offset = $this.offset();
+						var msg = $this.data('foolishMsg') || validator.getValidationMessage($this.data('validity'));
+
+						$tooltip.text(msg).show().css({
+							left: offset.left + 10,
+							top: offset.top + $(this).outerHeight() + 10
+						});
+					} else {
+						$tooltip.hide();
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//post
+				$("#login").click(function(event) {
+					/* Act on the event */
+					var data = $('form').serialize();
+
+					$.post('/users/mobile/login/', data, function(data, textStatus, xhr) {
+
+					});
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

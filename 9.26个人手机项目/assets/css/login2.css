@@ -1,0 +1,149 @@
+body {
+	background-color: #EEEEEE;
+}
+
+#vld-tooltip {
+	position: absolute;
+	z-index: 1000;
+	padding: 5px 10px;
+	background: #008842;
+	min-width: 150px;
+	color: #fff;
+	transition: all 0.15s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+	display: none;
+}
+
+#vld-tooltip:before {
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	content: "";
+	border-width: 0 8px 8px;
+	border-color: transparent transparent #008842;
+	border-style: none inset solid;
+}
+
+.am-field-error,
+.am-form-error .am-form-field {
+	border-color: #FFFFFF;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+.am-field-error:focus,
+.am-form-error .am-form-field:focus {
+	background-color: #fefffe;
+	border-color: #FFFFFF;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+.relative {
+	position: relative;
+}
+
+.forms {
+	background-color: #FFFFFF;
+	margin-top: 30px;
+}
+
+.borders {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.input_img1 {
+	position: absolute;
+	top: 9px;
+	left: 14px;
+	display: inline-block;
+	width: 18px;
+	height: 20px;
+}
+
+.am-form input[type=text] {
+	padding: 8px 46px;
+	border: none;
+}
+
+.am-form input[type=text]:focus,
+.am-form input[type=password]:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.am-form input[type=password] {
+	padding: 8px 46px;
+	border: none;
+}
+
+.input_img2 {
+	position: absolute;
+	top: 4px;
+	left: 232px;
+	display: inline-block;
+	width: 63px;
+	height: 30px;
+}
+
+.forgetkey {
+	color: #008842;
+	font-size: 15px;
+	margin-left: 10%;
+}
+
+.btns {
+	margin-top: 20px;
+	padding: 0 40px;
+}
+
+.left_btn {
+	display: inline-block;
+	width: 38%;
+	height: 40px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #fff;
+	background: #008842;
+	margin-left: 7%;
+}
+
+.right_btn {
+	margin-top: 20px;
+	border: 1px solid #008842;
+	color: #008842;
+	background: #fff;
+	display: inline-block;
+	width: 38%;
+	height: 40px;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-left: 7%;
+}
+.partners {
+	font-size: 15px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #a0a0a0;
+	margin-top: 38px;
+}
+
+.partners_logo {
+	text-align: center;
+}
+
+.partners_logo img {
+	display: inline-block;
+	width: 55px;
+	margin: 8px;
+}
+
+.bottom_logo img {
+	display: inline-block;
+	width: 104px;
+}

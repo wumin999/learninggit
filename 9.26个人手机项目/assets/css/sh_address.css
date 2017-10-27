@@ -1,0 +1,79 @@
+body {
+	background-color: #EEEEEE;
+}
+
+.address p {
+	margin: 6px;
+}
+
+.address {
+	background-color: #FFFFFF;
+	padding: 12px;
+	margin-bottom: 8px;
+}
+
+.address_up {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.name {
+	font-size: 16px;
+	color: #333;
+}
+
+.cate {
+	font-size: 12px;
+	color: #11b57c;
+	border: 1px solid #11b57c;
+	padding: 2px;
+	border-radius: 3px;
+	text-align: center;
+	border-bottom: none;
+}
+
+.ads {
+	font-size: 12px;
+	color: #333;
+}
+.address_down{
+	font-size: 14px;
+	color: #333;
+	margin-top: 8px;
+}
+.address_down img{
+	vertical-align: middle;
+}
+.address_down span{
+	vertical-align: middle;
+}
+.address_btn{
+	background-color: #FFFFFF;
+	text-align: center;
+    color: #808080;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 2px 16px;
+    outline: none;
+}
+.address_btn_del{
+	background-color: #FFFFFF;
+	text-align: center;
+    color: #808080;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 2px 16px;
+    outline: none;
+}
+.add_ads{
+	background-color:#11b57c;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 16px;
+	padding: 8px 0;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

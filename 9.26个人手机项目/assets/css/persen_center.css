@@ -1,0 +1,193 @@
+body {
+	background-color: #EEEEEE;
+}
+
+.top_name {
+	background-image: url(homeBg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 121px;
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+.name {
+	float: left;
+	margin: 6% 6%;
+}
+
+.name_img {
+	width: 65px;
+	height: 65px;
+	border: 4px solid rgba(255, 255, 255, .5);
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+
+.name_txt {
+	float: left;
+	margin: 0 0 0px 20px;
+}
+
+.name_txt p {
+	margin: 4px 0 10px 0;
+}
+
+.names1 {
+	color: #fff;
+	font-size: 18px;
+}
+
+.names2 img {
+	vertical-align: middle;
+}
+
+.names2 span {
+	vertical-align: middle;
+}
+
+.names2 {
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid rgba(39, 127, 85, 1);
+	border-radius: 20px;
+	background: rgba(0, 0, 0, .16);
+	width: 74px;
+}
+
+.signin {
+	float: right;
+	color: #12b67c;
+	font-size: 10px;
+	background: #c5f9e5;
+	border-radius: 3px 0 0 3px;
+	padding: 4px 8px;
+	margin-top: 44px;
+}
+
+.signin img {
+	vertical-align: middle;
+}
+
+.signin span {
+	vertical-align: middle;
+	padding: 4px 8px;
+}
+
+.setting {
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+.account {
+	background: #1eb675;
+}
+
+.account_list {
+	padding: 5px 0;
+}
+
+.account p {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	font-size: 10px;
+}
+
+.activity {
+	font-size: 10px;
+	color: #ff6a0f;
+	background-color: #FFFFFF;
+	padding: 8px 14px;
+	position: relative;
+}
+
+.activity p {
+	margin: 0;
+}
+
+.activity img {
+	vertical-align: middle;
+}
+
+.activity span {
+	vertical-align: middle;
+}
+
+.bordertop {
+	position: absolute;
+	top: -5px;
+	left: 55px;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 5px solid #fff;
+}
+
+.zhifu {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.am-thumbnails {
+	 margin-left:0rem; 
+	 margin-right: 0rem; 
+}
+
+.address {
+	background-color: #FFFFFF;
+	margin-top: 10px;
+	padding: 10px 8px;
+}
+
+.address .am-u-sm-3 {
+	margin-top: 10px;
+	border-bottom: 1px solid #EEEEEE;
+	padding-bottom: 10px;
+}
+
+[class*=am-u-]+[class*=am-u-]:last-child {
+	float: left;
+}
+
+.bottom_footer {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0px;
+	height: 50px;
+	background-color: #FFFFFF;
+	padding: 0 10px;
+}
+
+.bottom_footer li {
+	padding: 5px 20px;
+}
+
+.footer_list_name1 {
+	font-size: 11px;
+	color: #11b57c;
+	
+	text-align: center;
+}
+
+.footer_list_name2 {
+	font-size: 11px;
+	color: #8d8a8a;
+	text-align: center;
+}
+
+.am-footer {
+	padding: 0;
+}

@@ -1,0 +1,169 @@
+body {
+	background-color: #EEEEEE;
+}
+
+.goods_box {
+	border: none;
+	margin-top: 40px;
+}
+
+.am-thumbnail {
+	border: none;
+}
+
+.am-thumbnails {
+	margin-left: 0rem;
+	margin-right: 0rem;
+}
+
+.am-nav-tabs>li.am-active>a,
+.am-nav-tabs>li.am-active>a:focus,
+.am-nav-tabs>li.am-active>a:hover {
+	color: #11b57c;
+	background-color: #fff;
+	border: 0px solid #ddd;
+	/*border-bottom: 2px solid #11b57c;*/
+	cursor: default;
+}
+
+.am-nav-tabs>li>a {
+	margin-right: 5px;
+	line-height: 1.6;
+	border: 0px solid transparent;
+	border-radius: 0;
+}
+
+.am-nav>li>a:focus,
+.am-nav>li>a:hover {
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.am-nav-tabs>li>a:hover {
+	border: none;
+}
+
+.am-nav-tabs {
+	border-bottom: none;
+}
+
+.am-nav-tabs>li.am-active {
+	background-color: #fff;
+	color: #11b57c;
+	border-bottom: 1px solid #11b57c;
+	cursor: default;
+}
+
+.cate li {
+	/*color: #333333;*/
+	padding: 6px 8px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.cate li:focus,
+.cate li:hover {
+	background-color: #fff;
+	border-bottom: 1px solid #11b57c;
+}
+
+.am-tabs-bd .am-tab-panel {
+	padding: 4px 18px 15px;
+}
+
+.cate {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	z-index: 1000000000;
+}
+
+
+/**/
+
+.sysm {
+	width: 100%;
+	font-size: 12px;
+	color: #808080;
+	text-align: right;
+	margin-top: 8px;
+}
+
+.sysm img {
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.sysm span {
+	vertical-align: middle;
+}
+
+.coupon {
+	background: url(../../1img/coupon2.png) no-repeat;
+	height: 87px;
+	background-position: center;
+	background-size: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+
+.coupon_left {
+	font-size: 14px;
+	color: #11b57c;
+	text-align: center;
+	float: left;
+	margin-left: 15px;
+}
+
+.num1 {
+	font-size: 32px;
+	color: #11b57c;
+}
+
+.coupon_right {
+	float: right;
+	padding: 10px 34px 4px 4px;
+}
+
+.right_title {
+	width: 100%;
+	font-size: 12px;
+	color: #333;
+}
+
+.right_info {
+	width: 100%;
+	font-size: 12px;
+	color: #808080;
+	margin-top: 6px;
+}
+.coupon img{
+	position: absolute;
+	width: 40.5px;
+	height: 40.5px;
+	top: 3px;
+	right: 0;
+}
+.coupon2 {
+	background: url(../../1img/coupon1.png) no-repeat;
+	height: 87px;
+	background-position: center;
+	background-size: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+.coupon_left2 {
+	font-size: 14px;
+	color: #808080;
+	text-align: center;
+	float: left;
+	margin-left: 15px;
+}
+
+.num2 {
+	font-size: 32px;
+	color: #808080;
+}
